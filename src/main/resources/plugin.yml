@@ -1,4 +1,4 @@
 name: AwayTools
-version: ${project.version}
+version: 1.0
 main: pl.awaymc.tools.Main
 authors: [Piechuuu, dawidos506]
