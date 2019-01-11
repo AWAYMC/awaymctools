@@ -21,7 +21,7 @@ public final class Main extends JavaPlugin {
     }
 
     private void registerCommands() {
-
+        
     }
 
 
