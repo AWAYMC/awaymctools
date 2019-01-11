@@ -10,3 +10,5 @@ commands:
   broadcast:
     description: Wiadomosc do wszystkich graczy na serwerze.
     aliases: [bc]
+  heal:
+    description: Leczenie gracza.
