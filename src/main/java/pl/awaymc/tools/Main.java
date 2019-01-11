@@ -1,5 +1,6 @@
 package pl.awaymc.tools;
 
+import org.bukkit.Bukkit;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -9,11 +10,17 @@ public final class Main extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        Bukkit.getLogger().info("[AWAYMC] Uruchamianie pluginy AWAYTOOLS");
 
+        registerCommands();
     }
 
     @Override
     public void onDisable() {
+
+    }
+
+    private void registerCommands() {
 
     }
 
@@ -28,5 +35,6 @@ public final class Main extends JavaPlugin {
     private static void RC(String commandName, CommandExecutor executor) {
         getInst().getCommand(commandName).setExecutor(executor);
     }
+
 
 }
