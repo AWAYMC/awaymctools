@@ -40,7 +40,7 @@ public class CommandGamemode implements CommandExecutor {
             }
             else {
                 Player p = (Player)sender;
-                if(p.hasPermission("dtools.gamemode")) {
+                if(p.hasPermission("awaytools.gamemode")) {
                     if(args.length == 1) {
                         if(args[0].equalsIgnoreCase("survival") || args[0].equalsIgnoreCase("0") || args[0].equalsIgnoreCase("s")) {
                             p.setGameMode(GameMode.SURVIVAL);
@@ -85,7 +85,7 @@ public class CommandGamemode implements CommandExecutor {
                     }
                     else p.sendMessage(Main.prefix + " �4Poprawne uzycie: �6/gamemode <0/1/2/3> <nick>");
                 }
-
+                else p.sendMessage(Main.prefix + " §4Nie masz uprawnien do tej komendy! §8{awaymc.gamemode}");
             }
         }
         return false;

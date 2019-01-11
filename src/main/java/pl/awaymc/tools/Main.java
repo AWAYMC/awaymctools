@@ -3,6 +3,7 @@ package pl.awaymc.tools;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.plugin.java.JavaPlugin;
+import pl.awaymc.tools.commands.CommandBroadcast;
 import pl.awaymc.tools.commands.CommandGamemode;
 
 public final class Main extends JavaPlugin {
@@ -24,8 +25,8 @@ public final class Main extends JavaPlugin {
 
     private void registerCommands() {
         RC("gamemode", new CommandGamemode());
+        RC("broadcast", new CommandBroadcast());
     }
-
 
     /*
         INITIAL

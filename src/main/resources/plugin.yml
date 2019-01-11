@@ -7,3 +7,6 @@ commands:
   gamemode:
     description: Zmienia tryb gry gracza.
     aliases: [gm]
+  broadcast:
+    description: Wiadomosc do wszystkich graczy na serwerze.
+    aliases: [bc]
