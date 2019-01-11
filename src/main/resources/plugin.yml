@@ -12,3 +12,5 @@ commands:
     aliases: [bc]
   heal:
     description: Leczenie gracza.
+  feed:
+    description: Nasycenie gracza.

@@ -27,15 +27,15 @@ public class CommandHeal implements CommandExecutor {
             else {
                 Player p = (Player)sender;
                 if(args.length == 0) {
-                    if(p.hasPermission("dtools.heal")) {
+                    if(p.hasPermission("awaytools.heal")) {
                         p.setHealth(p.getMaxHealth());
                         p.setFoodLevel(20);
                         p.sendMessage(Main.prefix + " §aPomyslnie uleczono!");
                     }
-                    else p.sendMessage(Main.prefix + " §4Nie masz uprawnien do tej komendy!");
+                    else p.sendMessage(Main.prefix + " §4Nie masz uprawnien do tej komendy! §8{awaytools.heal}");
                 }
                 else if (args.length == 1) {
-                    if(p.hasPermission("dtools.heal.player")) {
+                    if(p.hasPermission("awaytools.heal.others")) {
                         Player t = Bukkit.getPlayerExact(args[0]);
                         if(t != null) {
                             t.setHealth(t.getMaxHealth());
@@ -45,7 +45,7 @@ public class CommandHeal implements CommandExecutor {
                         }
                         else p.sendMessage(Main.prefix + " §4Ten gracz jest offline!");
                     }
-                    else p.sendMessage(Main.prefix + " §4Nie masz uprawnien do tej komendy!");
+                    else p.sendMessage(Main.prefix + " §4Nie masz uprawnien do tej komendy! §8{awaytools.heal.others}");
                 }
                 else p.sendMessage(Main.prefix + " §4Poprawne uzycie: §6/heal <nick>");
             }
