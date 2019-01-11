@@ -2,3 +2,8 @@ name: AwayTools
 version: 1.0
 main: pl.awaymc.tools.Main
 authors: [Piechuuu, dawidos506]
+
+commands:
+  gamemode:
+    description: Zmienia tryb gry gracza.
+    aliases: [gm]

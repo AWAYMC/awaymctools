@@ -3,11 +3,12 @@ package pl.awaymc.tools;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.plugin.java.JavaPlugin;
+import pl.awaymc.tools.commands.CommandGamemode;
 
 public final class Main extends JavaPlugin {
 
     private static Main inst;
-    public static String prefix = "";
+    public static String prefix = "§8[§9§oAWAYMC§8]";
 
     @Override
     public void onEnable() {
@@ -22,7 +23,7 @@ public final class Main extends JavaPlugin {
     }
 
     private void registerCommands() {
-
+        RC("gamemode", new CommandGamemode());
     }
 
 
