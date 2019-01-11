@@ -1,17 +1,32 @@
 package pl.awaymc.tools;
 
+import org.bukkit.command.CommandExecutor;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class Main extends JavaPlugin {
 
+    private static Main inst;
+
     @Override
     public void onEnable() {
-        // Plugin startup logic
 
     }
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
+
     }
+
+
+    /*
+        INITIAL
+     */
+
+    public static Main getInst() {
+        return inst;
+    }
+    private static void RC(String commandName, CommandExecutor executor) {
+        getInst().getCommand(commandName).setExecutor(executor);
+    }
+
 }
