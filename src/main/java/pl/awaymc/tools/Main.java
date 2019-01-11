@@ -2,11 +2,14 @@ package pl.awaymc.tools;
 
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandExecutor;
+import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 import pl.awaymc.tools.commands.CommandBroadcast;
 import pl.awaymc.tools.commands.CommandFeed;
 import pl.awaymc.tools.commands.CommandGamemode;
 import pl.awaymc.tools.commands.CommandHeal;
+
+import javax.xml.bind.Marshaller;
 
 public final class Main extends JavaPlugin {
 
@@ -18,6 +21,7 @@ public final class Main extends JavaPlugin {
         Bukkit.getLogger().info("[AWAYMC] Uruchamianie pluginu AWAYTOOLS");
 
         registerCommands();
+        registerEvents();
     }
 
     @Override
@@ -31,6 +35,9 @@ public final class Main extends JavaPlugin {
         RC("heal", new CommandHeal());
         RC("feed", new CommandFeed());
     }
+    private void registerEvents() {
+
+    }
 
     /*
         INITIAL
@@ -42,6 +49,8 @@ public final class Main extends JavaPlugin {
     private static void RC(String commandName, CommandExecutor executor) {
         getInst().getCommand(commandName).setExecutor(executor);
     }
-
+    private static void RL(Listener listener) {
+        getInst().getServer().getPluginManager().registerEvents(listener, getInst());
+    }
 
 }
