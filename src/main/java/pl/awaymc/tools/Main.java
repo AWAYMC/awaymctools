@@ -4,10 +4,8 @@ import org.bukkit.Bukkit;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
-import pl.awaymc.tools.commands.CommandBroadcast;
-import pl.awaymc.tools.commands.CommandFeed;
-import pl.awaymc.tools.commands.CommandGamemode;
-import pl.awaymc.tools.commands.CommandHeal;
+import pl.awaymc.tools.commands.*;
+import pl.awaymc.tools.listeners.InventoryClickListener;
 
 import javax.xml.bind.Marshaller;
 
@@ -34,9 +32,10 @@ public final class Main extends JavaPlugin {
         RC("broadcast", new CommandBroadcast());
         RC("heal", new CommandHeal());
         RC("feed", new CommandFeed());
+        RC("sklep", new CommandSklep());
     }
     private void registerEvents() {
-
+        getServer().getPluginManager().registerEvents(new InventoryClickListener(), this);
     }
 
     /*
