@@ -5,9 +5,12 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 import pl.awaymc.tools.commands.*;
+<<<<<<< HEAD
 import pl.awaymc.tools.listeners.InventoryClickListener;
 
 import javax.xml.bind.Marshaller;
+=======
+>>>>>>> fbcf7e85b2ba87f972f750c4ba94412a09506f12
 
 public final class Main extends JavaPlugin {
 
@@ -32,7 +35,11 @@ public final class Main extends JavaPlugin {
         RC("broadcast", new CommandBroadcast());
         RC("heal", new CommandHeal());
         RC("feed", new CommandFeed());
+<<<<<<< HEAD
         RC("sklep", new CommandSklep());
+=======
+        RC("bct", new CommandBroadcastTitle());
+>>>>>>> fbcf7e85b2ba87f972f750c4ba94412a09506f12
     }
     private void registerEvents() {
         getServer().getPluginManager().registerEvents(new InventoryClickListener(), this);

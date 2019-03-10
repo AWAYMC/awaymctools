@@ -14,3 +14,5 @@ commands:
     description: Leczenie gracza.
   feed:
     description: Nasycenie gracza.
+  bct:
+    description: Wiadomosc na title do wszystkich graczy na serwerze.
