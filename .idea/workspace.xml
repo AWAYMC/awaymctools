@@ -13,74 +13,26 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/awaymc/tools/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/awaymc/tools/commands/CommandBroadcast.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="357">
+              <caret line="36" column="65" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/awaymc/tools/utils/FileManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/awaymc/tools/commands/CommandKit.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1913#1914#0" expanded="true" />
-                <element signature="e#1965#1966#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/awaymc/tools/utils/IS.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#createItemStack#2;class#IS#0" />
-                <element signature="method#createLore#1;class#IS#0" />
-                <element signature="method#createLore#2;class#IS#0" />
-                <element signature="method#createLore#3;class#IS#0" />
-                <element signature="method#createLore#4;class#IS#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/awaymc/tools/commands/elu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/awaymc/tools/commands/e.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/awaymc/tools/commands/CommandBroadcastTitle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+            <state relative-caret-position="170">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#103#135#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -106,12 +58,14 @@
         <option value="$PROJECT_DIR$/src/main/java/pl/awaymc/tools/commands/CommandFeed.java" />
         <option value="$PROJECT_DIR$/src/main/resources/plugin.yml" />
         <option value="$PROJECT_DIR$/src/main/java/pl/awaymc/tools/commands/CommandHeal.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/awaymc/tools/commands/CommandGamemode.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/awaymc/tools/utils/FileManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/awaymc/tools/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/awaymc/tools/commands/CommandKit.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/awaymc/tools/utils/IS.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/awaymc/tools/commands/elu.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/awaymc/tools/commands/e.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/awaymc/tools/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/awaymc/tools/commands/CommandGamemode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/awaymc/tools/commands/CommandBroadcastTitle.java" />
       </list>
     </option>
   </component>
@@ -218,7 +172,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552225811162" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552227459581" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
@@ -279,7 +233,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17473525" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24810892" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -294,7 +248,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32922733" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -321,16 +275,6 @@
   <component name="editorHistoryManager">
     <entry file="file://F:/.Pluginy/AwayMC Tools/src/dawidos506/awaymc/tools/cmds/CommandGamemode.java" />
     <entry file="file://F:/.Pluginy/AwayMC Tools/src/dawidos506/awaymc/tools/cmds/CommandBroadcast.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/awaymc/tools/commands/CommandBroadcast.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="21" column="38" lean-forward="true" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://F:/.Pluginy/AwayMC Tools/src/dawidos506/awaymc/tools/cmds/CommandHeal.java" />
     <entry file="file://F:/.Pluginy/AwayMC Tools/src/dawidos506/awaymc/tools/cmds/CommandFeed.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/awaymc/tools/commands/CommandFeed.java">
@@ -340,13 +284,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -360,28 +297,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/awaymc/tools/commands/CommandGamemode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="85" column="105" lean-forward="true" selection-start-line="85" selection-start-column="105" selection-end-line="85" selection-end-column="105" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://F:/.Pluginy/AwayMC Tools/src/dawidos506/awaymc/tools/cmds/CommandItemy.java" />
     <entry file="file://F:/.Pluginy/AwayMC Tools/src/dawidos506/awaymc/tools/utils/IS.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/awaymc/tools/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/awaymc/tools/utils/FileManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -404,9 +321,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/awaymc/tools/utils/IS.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/awaymc/tools/commands/elu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/awaymc/tools/commands/e.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/awaymc/tools/utils/IS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
           <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -419,17 +350,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/awaymc/tools/commands/elu.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="255">
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/awaymc/tools/commands/e.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/awaymc/tools/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        <state relative-caret-position="-161">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/awaymc/tools/commands/CommandGamemode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1445">
+          <caret line="85" column="105" lean-forward="true" selection-start-line="85" selection-start-column="105" selection-end-line="85" selection-end-column="105" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/awaymc/tools/commands/CommandBroadcast.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="36" column="65" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/awaymc/tools/commands/CommandBroadcastTitle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#103#135#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -9,8 +9,6 @@ import pl.awaymc.tools.commands.CommandFeed;
 import pl.awaymc.tools.commands.CommandGamemode;
 import pl.awaymc.tools.commands.CommandHeal;
 
-import javax.xml.bind.Marshaller;
-
 public final class Main extends JavaPlugin {
 
     private static Main inst;
