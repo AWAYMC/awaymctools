@@ -4,6 +4,7 @@ import org.bukkit.ChatColor;
 import org.bukkit.entity.*;
 import org.bukkit.inventory.*;
 import java.util.*;
+import java.util.regex.Pattern;
 
 public class ChatUtil
 {
@@ -19,5 +20,8 @@ public class ChatUtil
     }
     public static void sendMessage(Player p, String text) {
         p.sendMessage(fixColor(text));
+    }
+    public static boolean isInteger(final String string) {
+        return Pattern.matches("-?[0-9]+", string.subSequence(0, string.length()));
     }
 }

@@ -73,4 +73,8 @@ public class ItemBuilder {
         item.addUnsafeEnchantments(enchants);
         return item;
     }
+    public ItemBuilder setTitle(final String title) {
+        this.title = title;
+        return this;
+    }
 }
