@@ -18,10 +18,9 @@ public class CommandSklep implements CommandExecutor {
             if (!(sender.hasPermission("awaymc.sklep"))) {
                 sender.sendMessage("§4Blad: §cNie masz uprawien (awaymc.sklep)");
                 return false;
-
-                if (args.length == 0) {
-                    SkleGUI.sklep(p);
-                }
+            }
+            if(args.length ==1){
+                SkleGUI.sklep(p);
             }
         }
         return false;

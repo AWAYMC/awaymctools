@@ -26,14 +26,14 @@ public final class Main extends JavaPlugin {
     }
 
     private void registerCommands() {
-        RC("gamemode", new CommandGamemode());
-        RC("broadcast", new CommandBroadcast());
-        RC("heal", new CommandHeal());
-        RC("feed", new CommandFeed());
-        RC("sklep", new CommandSklep());
-        RC("bct", new CommandBroadcastTitle());
-        RC("is", new CommandItemShop());
-        RC("coins", new CommandCoins());
+        getCommand("gamemode").setExecutor(new CommandGamemode());
+        getCommand("broadcast").setExecutor(new CommandBroadcast());
+        getCommand("heal").setExecutor(new CommandHeal());
+        getCommand("feed").setExecutor(new CommandHeal());
+        getCommand("sklep").setExecutor(new CommandSklep());
+        getCommand("bct").setExecutor(new CommandBroadcastTitle());
+        getCommand("is").setExecutor(new CommandItemShop());
+        getCommand("coins").setExecutor(new CommandCoins());
     }
     private void registerEvents() {
         getServer().getPluginManager().registerEvents(new InventoryClickListener(), this);

@@ -1,7 +1,7 @@
 name: AwayTools
 version: 1.0
 main: pl.awaymc.tools.Main
-authors: [Piechuuu, dawidos506]
+author: Piechuu
 
 commands:
   gamemode:
@@ -16,3 +16,5 @@ commands:
     description: Nasycenie gracza.
   bct:
     description: Wiadomosc na title do wszystkich graczy na serwerze.
+  coins:
+  sklep:
