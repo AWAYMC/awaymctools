@@ -35,11 +35,9 @@ public final class Main extends JavaPlugin {
         RC("broadcast", new CommandBroadcast());
         RC("heal", new CommandHeal());
         RC("feed", new CommandFeed());
-<<<<<<< HEAD
         RC("sklep", new CommandSklep());
-=======
         RC("bct", new CommandBroadcastTitle());
->>>>>>> fbcf7e85b2ba87f972f750c4ba94412a09506f12
+        RC("coins", new CommandCoins());
     }
     private void registerEvents() {
         getServer().getPluginManager().registerEvents(new InventoryClickListener(), this);
