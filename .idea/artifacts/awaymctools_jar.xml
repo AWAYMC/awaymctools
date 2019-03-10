@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="awaymctools:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/awaymctools_jar</output-path>
+    <root id="archive" name="awaymctools.jar">
+      <element id="module-output" name="awaymctools" />
+      <element id="library" level="project" name="TitleAPI-1.7.7" />
+    </root>
+  </artifact>
+</component>
