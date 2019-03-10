@@ -32,11 +32,8 @@ public final class Main extends JavaPlugin {
         RC("feed", new CommandFeed());
         RC("sklep", new CommandSklep());
         RC("bct", new CommandBroadcastTitle());
-<<<<<<< HEAD
         RC("is", new CommandItemShop());
-=======
         RC("coins", new CommandCoins());
->>>>>>> 6674629c5e5596fe22e67b44f4ab2c29490fc90d
     }
     private void registerEvents() {
         getServer().getPluginManager().registerEvents(new InventoryClickListener(), this);
