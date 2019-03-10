@@ -10,17 +10,18 @@ public class CommandSklep implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        if(command.getName().equalsIgnoreCase("sklep")){
+        if (command.getName().equalsIgnoreCase("sklep")) {
             Player p = (Player) sender;
-            if(!(sender instanceof Player)){
+            if (!(sender instanceof Player)) {
                 sender.sendMessage("§4Komenda nie dla konsoli!");
             }
-            if(!(sender.hasPermission("awaymc.sklep"))) {
+            if (!(sender.hasPermission("awaymc.sklep"))) {
                 sender.sendMessage("§4Blad: §cNie masz uprawien (awaymc.sklep)");
                 return false;
 
-            if(args.length == 0){
-                SkleGUI.main(p);
+                if (args.length == 0) {
+                    SkleGUI.sklep(p);
+                }
             }
         }
         return false;
