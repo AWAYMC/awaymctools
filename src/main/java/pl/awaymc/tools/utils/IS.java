@@ -24,7 +24,7 @@ public class IS {
         return is;
     }
     public static ItemStack createItemStack(Material m, int amount, String name, List<String> lore) {
-        ItemStack is = new ItemStack(m, amount); {
+        ItemStack is = new ItemStack(m, amount);
             ItemMeta im = is.getItemMeta();
             im.setDisplayName(name);
             im.setLore(lore);
