@@ -1,6 +1,6 @@
 name: AwayTools
 version: 1.0
-main: pl.awaymc.tools.Main
+main: Main
 author: Piechuu
 
 commands:
