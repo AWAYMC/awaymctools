@@ -1,8 +1,8 @@
 package net.argania.core.managers;
 
-import net.karolek.revoguild.GuildPlugin;
-import net.karolek.revoguild.data.Messages;
-import net.karolek.revoguild.utils.Util;
+import net.argania.core.GuildPlugin;
+import net.argania.core.Utils.Util;
+import net.argania.core.data.Messages;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import org.bukkit.event.player.PlayerTeleportEvent;

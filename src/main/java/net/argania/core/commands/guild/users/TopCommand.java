@@ -1,13 +1,12 @@
 package net.argania.core.commands.guild.users;
 
-import net.karolek.revoguild.objects.guild.Guild;
-import net.karolek.revoguild.objects.user.User;
-import net.karolek.revoguild.commands.SubCommand;
-import net.karolek.revoguild.data.Commands;
-import net.karolek.revoguild.data.Messages;
-import net.karolek.revoguild.tablist.RankList.Data;
-import net.karolek.revoguild.tablist.update.TabThread;
-import net.karolek.revoguild.utils.Util;
+import net.argania.core.Utils.Util;
+import net.argania.core.commands.SubCommand;
+import net.argania.core.data.Commands;
+import net.argania.core.data.Messages;
+import net.argania.core.objects.guild.Guild;
+import net.argania.core.tablist.RankList;
+import net.argania.core.tablist.update.TabThread;
 import org.bukkit.entity.Player;
 
 public class TopCommand extends SubCommand {
@@ -20,7 +19,7 @@ public class TopCommand extends SubCommand {
     public boolean onCommand(Player p, String[] args) {
         Util.sendMessage(p, Messages.LIST_GUILD_HEADER);
         int i = 1;
-        for (Data<Guild> g : TabThread.getInstance().getRankList().getTopGuilds()) {
+        for (RankList.Data<Guild> g : TabThread.getInstance().getRankList().getTopGuilds()) {
             if (i > 10) {
                 break;
             }

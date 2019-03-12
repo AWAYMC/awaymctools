@@ -1,10 +1,10 @@
 package net.argania.core.objects.guild;
 
-import net.karolek.revoguild.GuildPlugin;
-import net.karolek.revoguild.data.Config;
-import net.karolek.revoguild.store.Entry;
-import net.karolek.revoguild.utils.ItemSerializer;
-import net.karolek.revoguild.utils.Util;
+import net.argania.core.GuildPlugin;
+import net.argania.core.Utils.ItemSerializer;
+import net.argania.core.Utils.Util;
+import net.argania.core.data.Config;
+import net.argania.core.store.modes.store.Entry;
 import org.bukkit.Bukkit;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;

@@ -1,13 +1,13 @@
 package net.argania.core.commands.guild.users;
 
-import net.karolek.revoguild.objects.guild.Guild;
-import net.karolek.revoguild.commands.SubCommand;
-import net.karolek.revoguild.data.Commands;
-import net.karolek.revoguild.data.Messages;
-import net.karolek.revoguild.managers.guild.GuildManager;
-import net.karolek.revoguild.managers.NameTagManager;
-import net.karolek.revoguild.managers.user.UserManager;
-import net.karolek.revoguild.utils.Util;
+import net.argania.core.Utils.Util;
+import net.argania.core.commands.SubCommand;
+import net.argania.core.data.Commands;
+import net.argania.core.data.Messages;
+import net.argania.core.managers.NameTagManager;
+import net.argania.core.managers.guild.GuildManager;
+import net.argania.core.managers.users.UserManager;
+import net.argania.core.objects.guild.Guild;
 import org.bukkit.entity.Player;
 
 public class PvpCommand extends SubCommand {

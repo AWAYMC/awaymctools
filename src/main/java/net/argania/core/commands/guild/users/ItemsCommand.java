@@ -1,14 +1,12 @@
 package net.argania.core.commands.guild.users;
 
-import net.karolek.revoguild.commands.SubCommand;
-import net.karolek.revoguild.data.Commands;
-import net.karolek.revoguild.data.Config;
-import net.karolek.revoguild.data.Messages;
-import net.karolek.revoguild.utils.ItemUtil;
-import net.karolek.revoguild.utils.Util;
+import net.argania.core.Utils.ItemUtil;
+import net.argania.core.Utils.Util;
+import net.argania.core.commands.SubCommand;
+import net.argania.core.data.Commands;
+import net.argania.core.data.Config;
+import net.argania.core.data.Messages;
 import org.bukkit.entity.*;
-import org.bukkit.*;
-
 import java.util.ArrayList;
 import java.util.List;
 

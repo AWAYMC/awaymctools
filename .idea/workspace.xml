@@ -7,36 +7,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd867ab8-9e86-4ed7-a167-0146349e90ae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/CommandItemShop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/awaymctools.iml" beforeDir="false" afterPath="$PROJECT_DIR$/awaymctools.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/awaymctools_jar/awaymctools.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/GuildPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/GuildPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/Utils/UptakeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/Utils/UptakeUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/CombatCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/CombatCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/SubCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/SubCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/GuildAdminCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/GuildAdminCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/admin/BanCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/admin/BanCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/admin/DeleteCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/admin/DeleteCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/admin/KickCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/admin/KickCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/admin/ReloadCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/admin/ReloadCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/admin/SetCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/admin/SetCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/data/Commands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/data/Commands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/data/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/data/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/ResetCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/ResetCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/RevoGuildCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/RevoGuildCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/GuildCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/GuildCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/AllianceCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/AllianceCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/CreateCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/CreateCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/DeleteCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/DeleteCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/EffectCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/EffectCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/EnlargeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/EnlargeCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/HomeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/HomeCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/InfoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/InfoCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/InviteCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/InviteCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/ItemsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/ItemsCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/JoinCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/JoinCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/KickCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/KickCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/LeaderCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/LeaderCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/LeaveCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/LeaveCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/OwnerCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/OwnerCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/ProlongCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/ProlongCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/PvpCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/PvpCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/SetHomeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/SetHomeCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/TopCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/TopCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/TreasureCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/TreasureCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/configuration/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/configuration/Configuration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/data/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/data/Messages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/managers/NameTagManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/managers/NameTagManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/managers/guild/AllianceManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/managers/guild/AllianceManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/managers/guild/GuildManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/managers/guild/GuildManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/managers/users/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/managers/users/UserManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/objects/guild/Alliance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/objects/guild/Alliance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/objects/guild/Guild.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/objects/guild/Guild.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/store/modes/StoreMySQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/store/modes/StoreMySQL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/store/modes/StoreSQLITE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/store/modes/StoreSQLITE.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/tablist/Profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/tablist/Profile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/tablist/RankList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/tablist/RankList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/tablist/TabData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/tablist/TabData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/tablist/packets/PacketManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/tablist/packets/PacketManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/tablist/update/TabThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/tablist/update/TabThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/data/TabScheme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/data/TabScheme.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/enums/NotifyType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/enums/NotifyType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/managers/CombatManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/managers/CombatManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/managers/TabManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/managers/TabManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/managers/TeleportManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/managers/TeleportManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/objects/guild/Cuboid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/objects/guild/Cuboid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/objects/guild/Treasure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/objects/guild/Treasure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/objects/users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/objects/users/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/packetlistener/PacketManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/packetlistener/PacketManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/tasks/CheckValidityTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/tasks/CheckValidityTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/tasks/CombatTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/tasks/CombatTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/argania/core/tasks/RespawnCrystalTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/argania/core/tasks/RespawnCrystalTask.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -48,20 +57,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/GuildPlugin.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="186" column="9" lean-forward="true" selection-start-line="186" selection-start-column="9" selection-end-line="186" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/SubCommand.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/ProlongCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+            <state relative-caret-position="102">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -70,10 +70,43 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/CombatCommand.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/PvpCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="323">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/TopCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="223">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/GuildAdminCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/GuildCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="98" column="43" lean-forward="true" selection-start-line="98" selection-start-column="43" selection-end-line="98" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -83,29 +116,19 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/plugin.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/admin/TeleportCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/admin/UnBanCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/tablist/update/TabHighUpdateTask.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/admin/SetCuboidCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/GuildAdminCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/store/modes/StoreMySQL.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/store/modes/StoreSQLITE.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/GuildPlugin.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/tablist/RankList.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/tablist/TabData.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/tablist/Profile.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/tablist/packets/PacketManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/data/Messages.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/tablist/update/TabThread.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/managers/guild/GuildManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/managers/users/UserManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/argania/core/managers/NameTagManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/argania/core/objects/guild/Guild.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/argania/core/objects/guild/Alliance.java" />
@@ -120,6 +143,43 @@
         <option value="$PROJECT_DIR$/src/main/java/net/argania/core/Utils/UptakeUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/argania/core/commands/CombatCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/argania/core/commands/SubCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/tasks/CheckValidityTask.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/tasks/CombatTask.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/tasks/RespawnCrystalTask.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/packetlistener/PacketManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/objects/guild/Cuboid.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/objects/guild/Treasure.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/objects/users/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/managers/CombatManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/managers/TabManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/GuildPlugin.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/managers/TeleportManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/enums/NotifyType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/data/TabScheme.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/configuration/Configuration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/commands/ResetCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/commands/RevoGuildCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/AllianceCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/CreateCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/DeleteCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/EffectCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/EnlargeCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/HomeCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/InfoCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/data/Messages.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/InviteCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/ItemsCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/JoinCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/KickCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/LeaderCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/LeaveCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/OwnerCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/ProlongCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/PvpCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/SetHomeCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/TopCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/TreasureCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/GuildCommand.java" />
       </list>
     </option>
   </component>
@@ -191,6 +251,65 @@
               <item name="core" type="462c0819:PsiDirectoryNode" />
               <item name="commands" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="awaymctools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="awaymctools" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="commands" type="462c0819:PsiDirectoryNode" />
+              <item name="guild" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="awaymctools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="awaymctools" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="commands" type="462c0819:PsiDirectoryNode" />
+              <item name="guild" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="awaymctools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="awaymctools" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="commands" type="462c0819:PsiDirectoryNode" />
+              <item name="guild" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="awaymctools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="awaymctools" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="configuration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="awaymctools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="awaymctools" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="awaymctools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="awaymctools" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="enums" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -199,7 +318,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552420197259" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552421625223" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/mc.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -277,151 +396,37 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/argania/core/commands/CommandItemShop.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/managers/TabManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lang.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tablist.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/Utils/DateUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/admin/TeleportCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="376">
+          <caret line="142" column="5" lean-forward="true" selection-start-line="142" selection-start-column="5" selection-end-line="142" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/admin/UnBanCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/GuildPlugin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="316">
+          <caret line="246" column="66" selection-start-line="246" selection-start-column="66" selection-end-line="246" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/managers/guild/GuildManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/tablist/update/TabHighUpdateTask.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/managers/TeleportManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/config.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/store/modes/StoreMySQL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="37" lean-forward="true" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/store/modes/StoreSQLITE.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/tablist/RankList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-338">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/tablist/Profile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/tablist/TabData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="63" column="9" lean-forward="true" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/tablist/packets/PacketManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="80" column="45" lean-forward="true" selection-start-line="80" selection-start-column="45" selection-end-line="80" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/tablist/update/TabThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="92" column="51" lean-forward="true" selection-start-line="92" selection-start-column="51" selection-end-line="92" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/managers/users/UserManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="85" column="31" lean-forward="true" selection-start-line="85" selection-start-column="31" selection-end-line="85" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/objects/guild/Alliance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="20" column="69" lean-forward="true" selection-start-line="20" selection-start-column="69" selection-end-line="20" selection-end-column="69" />
+        <state relative-caret-position="308">
+          <caret line="41" column="54" lean-forward="true" selection-start-line="41" selection-start-column="54" selection-end-line="41" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -430,7 +435,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/managers/guild/AllianceManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-47">
+        <state relative-caret-position="748">
           <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -440,18 +445,79 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/managers/NameTagManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        <state relative-caret-position="612">
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/admin/SetCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/managers/users/UserManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="64" column="33" lean-forward="true" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
+        <state relative-caret-position="1377">
+          <caret line="85" column="31" lean-forward="true" selection-start-line="85" selection-start-column="31" selection-end-line="85" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/tablist/packets/PacketManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="80" column="45" lean-forward="true" selection-start-line="80" selection-start-column="45" selection-end-line="80" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/tablist/packets/PlayerInfoAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/tablist/RankList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/enums/NotifyType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/tablist/TabData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="63" column="9" lean-forward="true" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/enums/Time.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/data/Commands.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -460,120 +526,55 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/data/Config.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/data/Commands.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3925">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/admin/ReloadCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/admin/DeleteCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/data/TabScheme.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+        <state relative-caret-position="280">
+          <caret line="48" column="35" lean-forward="true" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/admin/KickCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/configuration/Configuration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        <state relative-caret-position="291">
+          <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/admin/SetCuboidCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/ResetCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="25" column="22" lean-forward="true" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/admin/BanCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/RevoGuildCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="13" column="44" lean-forward="true" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="4" column="38" lean-forward="true" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/GuildAdminCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/SubCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="32" column="47" lean-forward="true" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2496#2497#0" expanded="true" />
-            <element signature="e#2523#2524#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/data/Messages.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="202" column="5" lean-forward="true" selection-start-line="202" selection-start-column="5" selection-end-line="202" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/Utils/UptakeUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="142" column="34" lean-forward="true" selection-start-line="142" selection-start-column="34" selection-end-line="142" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/managers/guild/GuildManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/objects/guild/Guild.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-982">
-          <caret line="277" column="63" selection-start-line="277" selection-start-column="63" selection-end-line="277" selection-end-column="63" />
+        <state relative-caret-position="192">
+          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -590,20 +591,297 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/SubCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/admin/BanCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+        <state relative-caret-position="102">
+          <caret line="13" column="44" lean-forward="true" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/GuildPlugin.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/admin/DeleteCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="186" column="9" lean-forward="true" selection-start-line="186" selection-start-column="9" selection-end-line="186" selection-end-column="9" />
+        <state relative-caret-position="385">
+          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/admin/KickCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/admin/ReloadCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/admin/SetCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="64" column="33" lean-forward="true" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/admin/SetCuboidCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="22" lean-forward="true" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/admin/TeleportCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/admin/UnBanCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/AllianceCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="40" column="9" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/CreateCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="51" column="101" lean-forward="true" selection-start-line="51" selection-start-column="101" selection-end-line="51" selection-end-column="101" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/EffectCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="57" column="43" lean-forward="true" selection-start-line="57" selection-start-column="43" selection-end-line="57" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/EnlargeCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/HomeCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/data/Messages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="281" column="5" lean-forward="true" selection-start-line="281" selection-start-column="5" selection-end-line="281" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/InfoCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/DeleteCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="35" column="43" lean-forward="true" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/InviteCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="44" column="87" lean-forward="true" selection-start-line="44" selection-start-column="87" selection-end-line="44" selection-end-column="87" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/ItemsCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/JoinCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/KickCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/LeaderCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="36" column="45" lean-forward="true" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/LeaveCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="21" column="55" lean-forward="true" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/OwnerCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/ProlongCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/SetHomeCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/PvpCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/TreasureCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/users/TopCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/GuildAdminCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/argania/core/commands/guild/GuildCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="98" column="43" lean-forward="true" selection-start-line="98" selection-start-column="43" selection-end-line="98" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

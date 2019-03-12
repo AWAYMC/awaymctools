@@ -1,6 +1,7 @@
 package net.argania.core.enums;
 
-import net.karolek.revoguild.data.Messages;
+
+import net.argania.core.data.Messages;
 
 public enum NotifyType {
 

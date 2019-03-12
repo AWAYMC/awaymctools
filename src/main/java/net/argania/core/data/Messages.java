@@ -281,4 +281,6 @@ public class Messages extends Configuration {
         return StringUtils.join(members, ChatColor.GRAY + ", " + ChatColor.RESET);
     }
 
+    public static String parse(List<String> infoGuild, Guild g) {
+    }
 }

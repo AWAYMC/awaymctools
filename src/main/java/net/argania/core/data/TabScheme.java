@@ -1,8 +1,7 @@
 package net.argania.core.data;
 
-import net.karolek.revoguild.GuildPlugin;
-import net.karolek.revoguild.utils.Logger;
-import net.karolek.revoguild.utils.Util;
+import net.argania.core.GuildPlugin;
+import net.argania.core.Utils.Logger;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;

@@ -242,10 +242,9 @@ public class GuildPlugin extends JavaPlugin {
             int myBuild = Integer.parseInt(myVersion.split("-")[1].replace("b", ""));
             if (!myVersion.equalsIgnoreCase(version) && build > myBuild) {
                 Logger.info("-------------[ ArganGUILD ]-------------");
-                Logger.info(" > Znaleziono nowa wersje pluginu!", "");
+                Logger.info(" > Licencja poprawna baw sie dobrze :)", "");
                 Logger.info(" > Zainstalowana wersja: " + myVersion);
                 Logger.info(" > Aktualna wersja: " + version, "");
-                Logger.info(" >");
                 Logger.info("---------------------------------------");
             }
             conn.disconnect();

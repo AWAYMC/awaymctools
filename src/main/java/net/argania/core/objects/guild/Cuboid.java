@@ -1,6 +1,6 @@
 package net.argania.core.objects.guild;
 
-import net.karolek.revoguild.data.Config;
+import net.argania.core.data.Config;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.World;

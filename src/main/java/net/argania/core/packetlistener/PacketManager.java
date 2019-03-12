@@ -1,11 +1,9 @@
 package net.argania.core.packetlistener;
 
 import io.netty.channel.*;
-import net.karolek.revoguild.packetlistener.events.PacketReceiveEvent;
-import net.karolek.revoguild.packetlistener.events.PacketSendEvent;
-import net.karolek.revoguild.utils.Reflection;
-import net.karolek.revoguild.utils.Reflection.FieldAccessor;
-import net.karolek.revoguild.utils.Reflection.MethodInvoker;
+import net.argania.core.Utils.Reflection;
+import net.argania.core.packetlistener.events.PacketReceiveEvent;
+import net.argania.core.packetlistener.events.PacketSendEvent;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 
@@ -15,10 +13,10 @@ import java.util.UUID;
 public class PacketManager {
 
     private static final HashMap<UUID, Channel> channels = new HashMap<>();
-    private static FieldAccessor<Channel> clientChannel = null;
-    private static FieldAccessor<Object> playerConnection = null;
-    private static FieldAccessor<Object> networkManager = null;
-    private static MethodInvoker handleMethod = null;
+    private static Reflection.FieldAccessor<Channel> clientChannel = null;
+    private static Reflection.FieldAccessor<Object> playerConnection = null;
+    private static Reflection.FieldAccessor<Object> networkManager = null;
+    private static Reflection.MethodInvoker handleMethod = null;
 
     static {
         try {

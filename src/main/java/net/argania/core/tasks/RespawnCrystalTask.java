@@ -1,8 +1,8 @@
 package net.argania.core.tasks;
 
-import net.karolek.revoguild.objects.guild.Guild;
-import net.karolek.revoguild.managers.guild.GuildManager;
-import net.karolek.revoguild.utils.UptakeUtil;
+import net.argania.core.Utils.UptakeUtil;
+import net.argania.core.managers.guild.GuildManager;
+import net.argania.core.objects.guild.Guild;
 import org.bukkit.scheduler.BukkitRunnable;
 
 public class RespawnCrystalTask extends BukkitRunnable {

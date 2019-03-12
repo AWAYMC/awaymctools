@@ -1,7 +1,7 @@
 package net.argania.core.managers;
 
-import net.karolek.revoguild.data.Config;
-import net.karolek.revoguild.utils.enums.Time;
+import net.argania.core.data.Config;
+import net.argania.core.enums.Time;
 import org.bukkit.entity.Player;
 
 import java.text.DecimalFormat;

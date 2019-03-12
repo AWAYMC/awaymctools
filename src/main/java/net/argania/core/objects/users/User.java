@@ -1,8 +1,8 @@
 package net.argania.core.objects.users;
 
-import net.karolek.revoguild.GuildPlugin;
-import net.karolek.revoguild.data.Config;
-import net.karolek.revoguild.store.Entry;
+import net.argania.core.GuildPlugin;
+import net.argania.core.data.Config;
+import net.argania.core.store.modes.store.Entry;
 import org.bukkit.Bukkit;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.entity.Player;

@@ -1,16 +1,16 @@
 package net.argania.core.managers;
 
-import net.karolek.revoguild.managers.guild.GuildManager;
-import net.karolek.revoguild.managers.user.UserManager;
-import net.karolek.revoguild.objects.guild.Guild;
-import net.karolek.revoguild.objects.user.User;
-import net.karolek.revoguild.data.Config;
-import net.karolek.revoguild.data.Messages;
-import net.karolek.revoguild.data.TabScheme;
-import net.karolek.revoguild.tablist.TabData;
-import net.karolek.revoguild.tablist.RankList.Data;
-import net.karolek.revoguild.tablist.update.TabThread;
-import net.karolek.revoguild.utils.*;
+import net.argania.core.Utils.*;
+import net.argania.core.data.Config;
+import net.argania.core.data.Messages;
+import net.argania.core.data.TabScheme;
+import net.argania.core.managers.guild.GuildManager;
+import net.argania.core.managers.users.UserManager;
+import net.argania.core.objects.guild.Guild;
+import net.argania.core.objects.users.User;
+import net.argania.core.tablist.RankList;
+import net.argania.core.tablist.TabData;
+import net.argania.core.tablist.update.TabThread;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 
@@ -92,24 +92,24 @@ public class TabManager {
 
     private static String parse(String s, Player p) {
         User pU = UserManager.getUser(p);
-        List<Data<User>> playerList = TabThread.getInstance().getRankList().getTopPlayers();
+        List<RankList.Data<User>> playerList = TabThread.getInstance().getRankList().getTopPlayers();
         for (int i = 0; i < Config.TABLIST_TOPS$MAX; i++) {
             String format = Config.TABLIST_FORMAT_PTOP;
             if (i >= playerList.size()) {
                 format = format.replace("{NAME}", Config.TABLIST_FORMAT_EMPTY);
             } else {
-                Data<User> u = playerList.get(i);
+                RankList.Data<User> u = playerList.get(i);
                 format = format.replace("{NAME}", u == null ? Config.TABLIST_FORMAT_EMPTY : u.getKey().getName());
             }
             s = s.replace("{PTOP-" + (i + 1) + "}", format);
         }
-        List<Data<Guild>> guildList = TabThread.getInstance().getRankList().getTopGuilds();
+        List<RankList.Data<Guild>> guildList = TabThread.getInstance().getRankList().getTopGuilds();
         for (int i = 0; i < Config.TABLIST_TOPS$MAX; i++) {
             String format = Config.TABLIST_FORMAT_GTOP;
             if (i >= guildList.size()) {
                 format = Config.TABLIST_FORMAT_EMPTY;
             } else {
-                Data<Guild> g = guildList.get(i);
+                RankList.Data<Guild> g = guildList.get(i);
                 format = Messages.parse(format, g.getKey());
             }
             s = s.replace("{GTOP-" + (i + 1) + "}", format);

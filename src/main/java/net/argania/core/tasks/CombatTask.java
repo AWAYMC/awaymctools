@@ -1,8 +1,8 @@
 package net.argania.core.tasks;
 
-import net.karolek.revoguild.data.Messages;
-import net.karolek.revoguild.managers.CombatManager;
-import net.karolek.revoguild.utils.Util;
+import net.argania.core.Utils.Util;
+import net.argania.core.data.Messages;
+import net.argania.core.managers.CombatManager;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitRunnable;
