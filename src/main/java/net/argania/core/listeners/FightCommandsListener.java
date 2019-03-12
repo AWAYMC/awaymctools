@@ -1,8 +1,8 @@
 package net.argania.core.listeners;
 
-import net.karolek.revoguild.data.Config;
-import net.karolek.revoguild.managers.CombatManager;
-import net.karolek.revoguild.utils.Util;
+import net.argania.core.Utils.Util;
+import net.argania.core.data.Config;
+import net.argania.core.managers.CombatManager;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;

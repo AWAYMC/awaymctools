@@ -1,14 +1,15 @@
 package net.argania.core.listeners;
 
-import net.karolek.revoguild.objects.guild.Guild;
-import net.karolek.revoguild.objects.user.User;
-import net.karolek.revoguild.data.Config;
-import net.karolek.revoguild.data.Messages;
-import net.karolek.revoguild.managers.CombatManager;
-import net.karolek.revoguild.managers.guild.GuildManager;
-import net.karolek.revoguild.managers.user.UserManager;
-import net.karolek.revoguild.tablist.update.TabThread;
-import net.karolek.revoguild.utils.Util;
+
+import net.argania.core.Utils.Util;
+import net.argania.core.data.Config;
+import net.argania.core.data.Messages;
+import net.argania.core.managers.CombatManager;
+import net.argania.core.managers.guild.GuildManager;
+import net.argania.core.managers.users.UserManager;
+import net.argania.core.objects.guild.Guild;
+import net.argania.core.objects.users.User;
+import net.argania.core.tablist.update.TabThread;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;

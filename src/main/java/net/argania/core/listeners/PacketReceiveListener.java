@@ -1,17 +1,18 @@
 package net.argania.core.listeners;
 
-import net.karolek.revoguild.GuildPlugin;
-import net.karolek.revoguild.objects.guild.Guild;
-import net.karolek.revoguild.data.Config;
-import net.karolek.revoguild.data.Messages;
-import net.karolek.revoguild.managers.guild.AllianceManager;
-import net.karolek.revoguild.managers.guild.GuildManager;
-import net.karolek.revoguild.managers.user.UserManager;
-import net.karolek.revoguild.packetlistener.events.PacketReceiveEvent;
-import net.karolek.revoguild.utils.*;
-import net.karolek.revoguild.utils.ParticleUtil.ParticleType;
-import net.karolek.revoguild.utils.Reflection.FieldAccessor;
-import net.karolek.revoguild.utils.enums.Time;
+import net.argania.core.GuildPlugin;
+import net.argania.core.Utils.ParticleUtil;
+import net.argania.core.Utils.Reflection;
+import net.argania.core.Utils.UptakeUtil;
+import net.argania.core.Utils.Util;
+import net.argania.core.data.Config;
+import net.argania.core.data.Messages;
+import net.argania.core.enums.Time;
+import net.argania.core.managers.guild.AllianceManager;
+import net.argania.core.managers.guild.GuildManager;
+import net.argania.core.managers.users.UserManager;
+import net.argania.core.objects.guild.Guild;
+import net.argania.core.packetlistener.events.PacketReceiveEvent;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Sound;
@@ -23,7 +24,7 @@ import org.bukkit.scheduler.BukkitRunnable;
 public class PacketReceiveListener implements Listener {
 
     private static final Class<?> useEntityClass = Reflection.getMinecraftClass("PacketPlayInUseEntity");
-    private static final FieldAccessor<Integer> useEntityA = Reflection.getField(useEntityClass, "a", int.class);
+    private static final Reflection.FieldAccessor<Integer> useEntityA = Reflection.getField(useEntityClass, "a", int.class);
 
     @EventHandler
     public void onPacketReceive(PacketReceiveEvent e) {
@@ -75,13 +76,13 @@ public class PacketReceiveListener implements Listener {
             for (int i = 0; i < 10; i++) {
                 g.getCuboid().getWorld().strikeLightning(g.getCuboid().getCenter());
             }
-            ParticleUtil.sendParticleToLocation(l, ParticleType.ENCHANTMENT_TABLE, 2, 2, 2, 9, 10);
+            ParticleUtil.sendParticleToLocation(l, ParticleUtil.ParticleType.ENCHANTMENT_TABLE, 2, 2, 2, 9, 10);
         } else {
             g.removeLives(1);
             g.setLastTakenLifeTime(System.currentTimeMillis());
             g.update(false);
             p.playSound(g.getCuboid().getCenter(), Sound.ANVIL_USE, 20, 20);
-            ParticleUtil.sendParticleToLocation(l, ParticleType.FLAME, 0.5F, 0.5F, 0.5F, 9, 10);
+            ParticleUtil.sendParticleToLocation(l, ParticleUtil.ParticleType.FLAME, 0.5F, 0.5F, 0.5F, 9, 10);
             Util.sendMessage(Bukkit.getOnlinePlayers(), Messages.parse(Messages.BROADCAST_GUILD_LIFE$TAKEN, g, o, p));
         }
 

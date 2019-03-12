@@ -1,13 +1,12 @@
 package net.argania.core.Utils;
 
-import net.karolek.revoguild.utils.Reflection.ConstructorInvoker;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 
 public class ParticleUtil {
 
-    private static final ConstructorInvoker c = Reflection.getConstructor(Reflection.getMinecraftClass("PacketPlayOutWorldParticles"), String.class, float.class, float.class, float.class, float.class, float.class, float.class, float.class, int.class);
+    private static final Reflection.ConstructorInvoker c = Reflection.getConstructor(Reflection.getMinecraftClass("PacketPlayOutWorldParticles"), String.class, float.class, float.class, float.class, float.class, float.class, float.class, float.class, int.class);
 
     public static void sendParticleToLocation(Location loc, ParticleType particle, float xOffset, float yOffset, float zOffset, float speed, int amount) {
         Object packet = c.invoke(particle.getName(), (float) loc.getX(), (float) loc.getY(), (float) loc.getZ(), xOffset, yOffset, zOffset, speed, amount);

@@ -1,6 +1,5 @@
 package net.argania.core.Utils;
 
-import org.apache.commons.lang.StringUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
@@ -17,10 +16,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.text.SimpleDateFormat;
 import java.util.*;
-import java.util.Map.Entry;
-import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Util {

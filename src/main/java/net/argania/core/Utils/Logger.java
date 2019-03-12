@@ -1,6 +1,6 @@
 package net.argania.core.Utils;
 
-import net.karolek.revoguild.GuildPlugin;
+import net.argania.core.GuildPlugin;
 import org.bukkit.Bukkit;
 
 import java.util.logging.Level;

@@ -1,15 +1,13 @@
 package net.argania.core.Utils;
 
-import net.karolek.revoguild.utils.Reflection.FieldAccessor;
-import net.karolek.revoguild.utils.Reflection.MethodInvoker;
 import org.bukkit.entity.Player;
 
 public class PacketUtil {
 
-    private static final MethodInvoker handleMethod;
-    private static final MethodInvoker sendPacket;
-    private static final FieldAccessor<Object> playerConnection;
-    private static final FieldAccessor<Integer> lastPing;
+    private static final Reflection.MethodInvoker handleMethod;
+    private static final Reflection.MethodInvoker sendPacket;
+    private static final Reflection.FieldAccessor<Object> playerConnection;
+    private static final Reflection.FieldAccessor<Integer> lastPing;
 
     static {
         handleMethod = Reflection.getMethod(Reflection.getCraftBukkitClass("entity.CraftEntity"), "getHandle");

@@ -1,15 +1,13 @@
 package net.argania.core.listeners;
 
-import net.karolek.revoguild.enums.NotifyType;
-import net.karolek.revoguild.managers.guild.AllianceManager;
-import net.karolek.revoguild.objects.guild.Guild;
-import net.karolek.revoguild.data.Config;
-import net.karolek.revoguild.data.Messages;
-import net.karolek.revoguild.managers.guild.GuildManager;
-import net.karolek.revoguild.managers.user.UserManager;
-import net.karolek.revoguild.utils.enums.Time;
-import net.karolek.revoguild.utils.Util;
-import org.bukkit.GameMode;
+import net.argania.core.Utils.Util;
+import net.argania.core.data.Config;
+import net.argania.core.data.Messages;
+import net.argania.core.enums.NotifyType;
+import net.argania.core.enums.Time;
+import net.argania.core.managers.guild.AllianceManager;
+import net.argania.core.managers.guild.GuildManager;
+import net.argania.core.objects.guild.Guild;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;

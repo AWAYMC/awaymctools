@@ -1,11 +1,11 @@
 package net.argania.core.commands.ranking;
 
-import net.karolek.revoguild.commands.SubCommand;
-import net.karolek.revoguild.commands.ranking.admin.ResetCommand;
-import net.karolek.revoguild.commands.ranking.admin.SetCommand;
-import net.karolek.revoguild.data.Commands;
-import net.karolek.revoguild.data.Messages;
-import net.karolek.revoguild.utils.Util;
+import net.argania.core.Utils.Util;
+import net.argania.core.commands.ResetCommand;
+import net.argania.core.commands.SubCommand;
+import net.argania.core.commands.guild.admin.SetCommand;
+import net.argania.core.data.Commands;
+import net.argania.core.data.Messages;
 import org.bukkit.entity.Player;
 
 import java.util.Arrays;

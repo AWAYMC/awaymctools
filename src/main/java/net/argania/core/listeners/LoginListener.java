@@ -1,8 +1,8 @@
 package net.argania.core.listeners;
 
-import net.karolek.revoguild.objects.guild.Guild;
-import net.karolek.revoguild.data.Messages;
-import net.karolek.revoguild.managers.guild.GuildManager;
+import net.argania.core.data.Messages;
+import net.argania.core.managers.guild.GuildManager;
+import net.argania.core.objects.guild.Guild;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;

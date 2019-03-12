@@ -1,6 +1,5 @@
 package net.argania.core.enums;
 
-
 import net.argania.core.data.Messages;
 
 public enum NotifyType {
