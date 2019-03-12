@@ -1,15 +1,15 @@
 package net.argania.core.objects.guild;
 
-import net.karolek.revoguild.GuildPlugin;
-import net.karolek.revoguild.data.Config;
-import net.karolek.revoguild.data.Messages;
-import net.karolek.revoguild.managers.guild.AllianceManager;
-import net.karolek.revoguild.managers.user.UserManager;
-import net.karolek.revoguild.objects.user.User;
-import net.karolek.revoguild.store.Entry;
-import net.karolek.revoguild.tablist.update.TabThread;
-import net.karolek.revoguild.utils.enums.Time;
-import net.karolek.revoguild.utils.Util;
+import net.argania.core.GuildPlugin;
+import net.argania.core.Utils.Util;
+import net.argania.core.data.Config;
+import net.argania.core.data.Messages;
+import net.argania.core.enums.Time;
+import net.argania.core.managers.guild.AllianceManager;
+import net.argania.core.managers.users.UserManager;
+import net.argania.core.objects.users.User;
+import net.argania.core.store.modes.store.Entry;
+import net.argania.core.tablist.update.TabThread;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.OfflinePlayer;

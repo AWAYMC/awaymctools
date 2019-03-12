@@ -1,9 +1,9 @@
 package net.argania.core.tablist.packets;
 
 import com.mojang.authlib.GameProfile;
-import net.karolek.revoguild.tablist.Profile;
-import net.karolek.revoguild.utils.Reflection;
-import net.karolek.revoguild.utils.Util;
+import net.argania.core.Utils.Reflection;
+import net.argania.core.Utils.Util;
+import net.argania.core.tablist.Profile;
 import org.bukkit.entity.Player;
 
 import java.lang.reflect.Constructor;

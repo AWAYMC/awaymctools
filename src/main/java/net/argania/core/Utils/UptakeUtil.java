@@ -1,9 +1,7 @@
 package net.argania.core.Utils;
 
-import net.karolek.revoguild.objects.guild.Guild;
-import net.karolek.revoguild.managers.guild.GuildManager;
-import net.karolek.revoguild.utils.Reflection.ConstructorInvoker;
-import net.karolek.revoguild.utils.Reflection.FieldAccessor;
+import net.argania.core.managers.guild.GuildManager;
+import net.argania.core.objects.guild.Guild;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
@@ -16,22 +14,22 @@ public class UptakeUtil {
     private static final HashMap<String, HashMap<Guild, Integer>> sends = new HashMap<>();
 
     private static final Class<?> spawnEntityClass = Reflection.getMinecraftClass("PacketPlayOutSpawnEntity");
-    private static final ConstructorInvoker spawnEntityConstructor = Reflection.getConstructor(spawnEntityClass);
-    private static final FieldAccessor<Integer> spawnEntityA = Reflection.getField(spawnEntityClass, "a", int.class);
-    private static final FieldAccessor<Integer> spawnEntityB = Reflection.getField(spawnEntityClass, "b", int.class);
-    private static final FieldAccessor<Integer> spawnEntityC = Reflection.getField(spawnEntityClass, "c", int.class);
-    private static final FieldAccessor<Integer> spawnEntityD = Reflection.getField(spawnEntityClass, "d", int.class);
-    private static final FieldAccessor<Integer> spawnEntityE = Reflection.getField(spawnEntityClass, "e", int.class);
-    private static final FieldAccessor<Integer> spawnEntityF = Reflection.getField(spawnEntityClass, "f", int.class);
-    private static final FieldAccessor<Integer> spawnEntityG = Reflection.getField(spawnEntityClass, "g", int.class);
-    private static final FieldAccessor<Integer> spawnEntityH = Reflection.getField(spawnEntityClass, "h", int.class);
-    private static final FieldAccessor<Integer> spawnEntityI = Reflection.getField(spawnEntityClass, "i", int.class);
-    private static final FieldAccessor<Integer> spawnEntityJ = Reflection.getField(spawnEntityClass, "j", int.class);
-    private static final FieldAccessor<Integer> spawnEntityK = Reflection.getField(spawnEntityClass, "k", int.class);
+    private static final Reflection.ConstructorInvoker spawnEntityConstructor = Reflection.getConstructor(spawnEntityClass);
+    private static final Reflection.FieldAccessor<Integer> spawnEntityA = Reflection.getField(spawnEntityClass, "a", int.class);
+    private static final Reflection.FieldAccessor<Integer> spawnEntityB = Reflection.getField(spawnEntityClass, "b", int.class);
+    private static final Reflection.FieldAccessor<Integer> spawnEntityC = Reflection.getField(spawnEntityClass, "c", int.class);
+    private static final Reflection.FieldAccessor<Integer> spawnEntityD = Reflection.getField(spawnEntityClass, "d", int.class);
+    private static final Reflection.FieldAccessor<Integer> spawnEntityE = Reflection.getField(spawnEntityClass, "e", int.class);
+    private static final Reflection.FieldAccessor<Integer> spawnEntityF = Reflection.getField(spawnEntityClass, "f", int.class);
+    private static final Reflection.FieldAccessor<Integer> spawnEntityG = Reflection.getField(spawnEntityClass, "g", int.class);
+    private static final Reflection.FieldAccessor<Integer> spawnEntityH = Reflection.getField(spawnEntityClass, "h", int.class);
+    private static final Reflection.FieldAccessor<Integer> spawnEntityI = Reflection.getField(spawnEntityClass, "i", int.class);
+    private static final Reflection.FieldAccessor<Integer> spawnEntityJ = Reflection.getField(spawnEntityClass, "j", int.class);
+    private static final Reflection.FieldAccessor<Integer> spawnEntityK = Reflection.getField(spawnEntityClass, "k", int.class);
     private static final Class<?> entityDestroyClass = Reflection.getMinecraftClass("PacketPlayOutEntityDestroy");
-    private static final ConstructorInvoker entityDestroyConstructor = Reflection.getConstructor(entityDestroyClass);
-    private static final FieldAccessor<int[]> entityDestroyA = Reflection.getField(entityDestroyClass, "a", int[].class);
-    private static final FieldAccessor<Integer> entityCount = Reflection.getField(Reflection.getMinecraftClass("Entity"), "entityCount", int.class);
+    private static final Reflection.ConstructorInvoker entityDestroyConstructor = Reflection.getConstructor(entityDestroyClass);
+    private static final Reflection.FieldAccessor<int[]> entityDestroyA = Reflection.getField(entityDestroyClass, "a", int[].class);
+    private static final Reflection.FieldAccessor<Integer> entityCount = Reflection.getField(Reflection.getMinecraftClass("Entity"), "entityCount", int.class);
 
     private static Object createSpawnPacket(int id, double x, double y, double z) {
         Object o = spawnEntityConstructor.invoke();
@@ -150,4 +148,5 @@ public class UptakeUtil {
         return sends;
     }
 
-}
+    }
+

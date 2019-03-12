@@ -1,8 +1,8 @@
 package net.argania.core.objects.guild;
 
-import net.karolek.revoguild.GuildPlugin;
-import net.karolek.revoguild.managers.guild.GuildManager;
-import net.karolek.revoguild.store.Entry;
+import net.argania.core.GuildPlugin;
+import net.argania.core.managers.guild.GuildManager;
+import net.argania.core.store.modes.store.Entry;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

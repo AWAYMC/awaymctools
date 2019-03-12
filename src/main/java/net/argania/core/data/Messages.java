@@ -1,13 +1,13 @@
 package net.argania.core.data;
 
-import net.karolek.revoguild.objects.guild.Guild;
-import net.karolek.revoguild.objects.user.User;
-import net.karolek.revoguild.commands.SubCommand;
-import net.karolek.revoguild.configuration.Configuration;
-import net.karolek.revoguild.managers.guild.GuildManager;
-import net.karolek.revoguild.managers.user.UserManager;
-import net.karolek.revoguild.utils.DateUtil;
-import net.karolek.revoguild.utils.Util;
+import net.argania.core.Utils.DateUtil;
+import net.argania.core.Utils.Util;
+import net.argania.core.commands.SubCommand;
+import net.argania.core.configuration.Configuration;
+import net.argania.core.managers.guild.GuildManager;
+import net.argania.core.managers.users.UserManager;
+import net.argania.core.objects.guild.Guild;
+import net.argania.core.objects.users.User;
 import org.apache.commons.lang.StringUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -202,7 +202,7 @@ public class Messages extends Configuration {
         return Util.fixColor(msg);
     }
 
-    public static List<String> parse(List<String> list, Guild g) {
+    public static List<String> parse(List<String> list, SubCommand g) {
         List<String> fin = new ArrayList<>();
         for (String msg : list) {
             msg = parse(msg, g);

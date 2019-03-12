@@ -1,10 +1,10 @@
 package net.argania.core.store.modes;
 
-import net.karolek.revoguild.GuildPlugin;
-import net.karolek.revoguild.data.Config;
-import net.karolek.revoguild.store.Store;
-import net.karolek.revoguild.store.StoreMode;
-import net.karolek.revoguild.utils.Logger;
+import net.argania.core.GuildPlugin;
+import net.argania.core.Utils.Logger;
+import net.argania.core.data.Config;
+import net.argania.core.store.modes.store.Store;
+import net.argania.core.store.modes.store.StoreMode;
 
 import java.io.File;
 import java.sql.Connection;

@@ -1,11 +1,10 @@
 package net.argania.core.managers.users;
 
-import net.karolek.revoguild.GuildPlugin;
-import net.karolek.revoguild.objects.guild.Guild;
-import net.karolek.revoguild.objects.user.User;
-import net.karolek.revoguild.tablist.RankList;
-import net.karolek.revoguild.tablist.update.TabThread;
-import net.karolek.revoguild.utils.Logger;
+import net.argania.core.GuildPlugin;
+import net.argania.core.Utils.Logger;
+import net.argania.core.objects.users.User;
+import net.argania.core.tablist.RankList;
+import net.argania.core.tablist.update.TabThread;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.entity.Player;
 import org.bukkit.metadata.FixedMetadataValue;

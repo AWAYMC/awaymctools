@@ -1,9 +1,9 @@
 package net.argania.core.commands;
 
-import net.karolek.revoguild.data.Commands;
-import net.karolek.revoguild.data.Messages;
-import net.karolek.revoguild.managers.CombatManager;
-import net.karolek.revoguild.utils.Util;
+import net.argania.core.Utils.Util;
+import net.argania.core.data.Commands;
+import net.argania.core.data.Messages;
+import net.argania.core.managers.CombatManager;
 import org.bukkit.entity.Player;
 
 public class CombatCommand extends SubCommand {

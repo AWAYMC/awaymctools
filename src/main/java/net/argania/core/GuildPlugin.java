@@ -233,7 +233,7 @@ public class GuildPlugin extends JavaPlugin {
 
     private void checkUpdate() {
         try {
-            String url = "https://raw.githubusercontent.com/userMacieG/RevoGuild/master/version.txt";
+            String url = "https://youtube.com/piechu1337";
             HttpURLConnection conn = (HttpURLConnection) new URL(url).openConnection();
             BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
             String version = br.readLine();

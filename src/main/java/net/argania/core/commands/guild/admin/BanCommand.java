@@ -1,12 +1,12 @@
 package net.argania.core.commands.guild.admin;
 
-import net.karolek.revoguild.objects.guild.Guild;
-import net.karolek.revoguild.commands.SubCommand;
-import net.karolek.revoguild.data.Commands;
-import net.karolek.revoguild.data.Messages;
-import net.karolek.revoguild.managers.guild.GuildManager;
-import net.karolek.revoguild.utils.DateUtil;
-import net.karolek.revoguild.utils.Util;
+import net.argania.core.Utils.DateUtil;
+import net.argania.core.Utils.Util;
+import net.argania.core.commands.SubCommand;
+import net.argania.core.data.Commands;
+import net.argania.core.data.Messages;
+import net.argania.core.managers.guild.GuildManager;
+import net.argania.core.objects.guild.Guild;
 import org.apache.commons.lang.StringUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;

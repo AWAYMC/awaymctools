@@ -1,7 +1,8 @@
 package net.argania.core.tablist;
 
-import net.karolek.revoguild.objects.guild.Guild;
-import net.karolek.revoguild.objects.user.User;
+
+import net.argania.core.objects.guild.Guild;
+import net.argania.core.objects.users.User;
 
 import java.util.ArrayList;
 import java.util.Collection;

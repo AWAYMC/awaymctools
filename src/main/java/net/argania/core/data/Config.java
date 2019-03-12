@@ -1,6 +1,6 @@
 package net.argania.core.data;
 
-import net.karolek.revoguild.configuration.Configuration;
+import net.argania.core.configuration.Configuration;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.Arrays;
@@ -156,4 +156,6 @@ public class Config extends Configuration {
         super(plugin, "config.yml", "config.");
     }
 
+    public void reloadConfiguration() {
+    }
 }

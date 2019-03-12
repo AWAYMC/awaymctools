@@ -1,9 +1,8 @@
 package net.argania.core.tablist;
 
-import net.karolek.revoguild.GuildPlugin;
-import net.karolek.revoguild.tablist.packets.PacketManager;
-import net.karolek.revoguild.tablist.packets.PlayerInfoAction;
-import net.karolek.revoguild.utils.Util;
+import net.argania.core.Utils.Util;
+import net.argania.core.tablist.packets.PacketManager;
+import net.argania.core.tablist.packets.PlayerInfoAction;
 import org.bukkit.entity.Player;
 
 import java.util.UUID;

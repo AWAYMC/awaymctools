@@ -1,13 +1,12 @@
 package net.argania.core.commands.guild.admin;
 
-import net.karolek.revoguild.GuildPlugin;
-import net.karolek.revoguild.commands.SubCommand;
-import net.karolek.revoguild.data.Commands;
-import net.karolek.revoguild.data.Config;
-import net.karolek.revoguild.data.Messages;
-import net.karolek.revoguild.data.TabScheme;
-import net.karolek.revoguild.tablist.update.TabThread;
-import net.karolek.revoguild.utils.Util;
+import net.argania.core.GuildPlugin;
+import net.argania.core.Utils.Util;
+import net.argania.core.commands.SubCommand;
+import net.argania.core.data.Commands;
+import net.argania.core.data.Messages;
+import net.argania.core.data.TabScheme;
+import net.argania.core.tablist.update.TabThread;
 import org.bukkit.entity.Player;
 
 public class ReloadCommand extends SubCommand {

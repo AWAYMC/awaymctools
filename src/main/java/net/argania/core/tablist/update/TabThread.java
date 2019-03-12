@@ -1,13 +1,12 @@
 package net.argania.core.tablist.update;
 
-import net.karolek.revoguild.GuildPlugin;
-import net.karolek.revoguild.objects.guild.Guild;
-import net.karolek.revoguild.objects.user.User;
-import net.karolek.revoguild.managers.guild.GuildManager;
-import net.karolek.revoguild.managers.user.UserManager;
-import net.karolek.revoguild.tablist.RankList;
-import net.karolek.revoguild.tablist.RankList.Data;
-import net.karolek.revoguild.utils.Logger;
+import net.argania.core.GuildPlugin;
+import net.argania.core.Utils.Logger;
+import net.argania.core.managers.guild.GuildManager;
+import net.argania.core.managers.users.UserManager;
+import net.argania.core.objects.guild.Guild;
+import net.argania.core.objects.users.User;
+import net.argania.core.tablist.RankList;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -85,16 +84,16 @@ public class TabThread extends Thread {
             while (true) {
                 List<User> stats = new ArrayList<>(UserManager.getUsers().values());
                 stats.sort(getUsersComparator());
-                List<Data<User>> toAddPlayers = new LinkedList<>();
+                List<RankList.Data<User>> toAddPlayers = new LinkedList<>();
                 for (User u : stats) {
-                    toAddPlayers.add(new Data<>(u, u.getPoints()));
+                    toAddPlayers.add(new RankList.Data<>(u, u.getPoints()));
                 }
                 rankList.setTopPlayers(toAddPlayers);
                 List<Guild> guilds = new ArrayList<>(GuildManager.getGuilds().values());
                 guilds.sort(getGuildsComparator());
-                List<Data<Guild>> toAddGuilds = new LinkedList<>();
+                List<RankList.Data<Guild>> toAddGuilds = new LinkedList<>();
                 for (Guild g : guilds) {
-                    toAddGuilds.add(new Data<>(g, g.getPoints()));
+                    toAddGuilds.add(new RankList.Data<>(g, g.getPoints()));
                 }
                 rankList.setTopGuilds(toAddGuilds);
                 new TabHighUpdateTask().runTaskLaterAsynchronously(GuildPlugin.getPlugin(), 1L);

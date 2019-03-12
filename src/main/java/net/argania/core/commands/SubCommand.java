@@ -1,8 +1,13 @@
 package net.argania.core.commands;
 
-import net.karolek.revoguild.data.Messages;
-import net.karolek.revoguild.utils.Reflection;
-import net.karolek.revoguild.utils.Util;
+import net.argania.core.Utils.Reflection;
+import net.argania.core.Utils.Util;
+import net.argania.core.commands.guild.GuildAdminCommand;
+import net.argania.core.commands.guild.GuildCommand;
+import net.argania.core.commands.guild.users.TopCommand;
+import net.argania.core.commands.ranking.RankingAdminCommand;
+import net.argania.core.commands.ranking.RankingCommand;
+import net.argania.core.data.Messages;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandMap;
@@ -20,6 +25,7 @@ public abstract class SubCommand extends Command {
     private static final HashMap<String, Command> commands = new HashMap<>();
     private static final Reflection.FieldAccessor<SimpleCommandMap> f = Reflection.getField(SimplePluginManager.class, "commandMap", SimpleCommandMap.class);
     private static CommandMap cmdMap = f.get(Bukkit.getServer().getPluginManager());
+    private static String fallback;
 
     private final String name;
     private final String usage;
@@ -42,6 +48,24 @@ public abstract class SubCommand extends Command {
         this.permission = permission;
     }
 
+    public static void registerCommand(GuildAdminCommand guildCommand) {
+    }
+
+    public static void registerCommand(TopCommand rankingAdminCommand) {
+    }
+
+    public static void registerCommand(RankingCommand rankingCommand) {
+    }
+
+    public static void registerCommand(RankingAdminCommand rankingAdminCommand) {
+    }
+
+    public static void registerCommand(GuildCommand guildCommand) {
+    }
+
+    public static void registerCommand(CombatCommand combatCommand) {
+    }
+
     @Override
     public boolean execute(CommandSender sender, String label, String[] args) {
         if (!(sender instanceof Player)) {
@@ -54,13 +78,9 @@ public abstract class SubCommand extends Command {
         return onCommand(p, args);
     }
 
-    private static void registerCommand(Command cmd, String fallback) {
+    public static void registerCommand(RevoGuildCommand cmd) {
         cmdMap.register(fallback, cmd);
         commands.put(cmd.getName(), cmd);
-    }
-
-    public static void registerCommand(Command cmd) {
-        registerCommand(cmd, cmd.getName());
     }
 
     public abstract boolean onCommand(Player player, String[] args);

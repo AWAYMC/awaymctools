@@ -1,10 +1,10 @@
 package net.argania.core.store.modes;
 
-import net.karolek.revoguild.GuildPlugin;
-import net.karolek.revoguild.store.Store;
-import net.karolek.revoguild.store.StoreMode;
-import net.karolek.revoguild.utils.Logger;
-import net.karolek.revoguild.utils.enums.Time;
+import net.argania.core.GuildPlugin;
+import net.argania.core.Utils.Logger;
+import net.argania.core.enums.Time;
+import net.argania.core.store.modes.store.Store;
+import net.argania.core.store.modes.store.StoreMode;
 import org.bukkit.scheduler.BukkitRunnable;
 
 import java.sql.Connection;

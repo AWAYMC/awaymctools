@@ -1,10 +1,10 @@
 package net.argania.core.managers.guild;
 
-import net.karolek.revoguild.GuildPlugin;
-import net.karolek.revoguild.managers.NameTagManager;
-import net.karolek.revoguild.objects.guild.Alliance;
-import net.karolek.revoguild.objects.guild.Guild;
-import net.karolek.revoguild.utils.Logger;
+import net.argania.core.GuildPlugin;
+import net.argania.core.Utils.Logger;
+import net.argania.core.managers.NameTagManager;
+import net.argania.core.objects.guild.Alliance;
+import net.argania.core.objects.guild.Guild;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -93,4 +93,5 @@ public class AllianceManager {
         return invites;
     }
 
-}
+    }
+

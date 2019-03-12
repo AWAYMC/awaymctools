@@ -1,10 +1,10 @@
 package net.argania.core.commands.guild;
 
-import net.karolek.revoguild.commands.SubCommand;
-import net.karolek.revoguild.commands.guild.admin.*;
-import net.karolek.revoguild.data.Commands;
-import net.karolek.revoguild.data.Messages;
-import net.karolek.revoguild.utils.Util;
+import net.argania.core.Utils.Util;
+import net.argania.core.commands.SubCommand;
+import net.argania.core.commands.guild.admin.*;
+import net.argania.core.data.Commands;
+import net.argania.core.data.Messages;
 import org.bukkit.entity.Player;
 
 import java.util.Arrays;
@@ -68,4 +68,7 @@ public class GuildAdminCommand extends SubCommand {
         return null;
     }
 
+    public String getName() {
+        return null;
+    }
 }
