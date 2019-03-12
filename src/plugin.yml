@@ -1,22 +1,8 @@
 name: ArganiaCore
 version: 1.0
 main: Main
-authors: [Piechuu, adrianekk]
+author: Piechuu
 
 commands:
-  gamemode:
-    description: Zmienia tryb gry gracza.
-    aliases: [gm]
-  broadcast:
-    description: Wiadomosc do wszystkich graczy na serwerze.
-    aliases: [bc]
-  heal:
-    description: Leczenie gracza.
-  feed:
-    description: Nasycenie gracza.
-  bct:
-    description: Wiadomosc na title do wszystkich graczy na serwerze.
-  coins:
-  sklep:
   is:
     aliases: [itemshop]
