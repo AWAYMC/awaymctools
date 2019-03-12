@@ -1,7 +1,7 @@
-name: AwayTools
+name: ArganiaCore
 version: 1.0
-main: pl.awaymc.tools.Main
-author: Piechuu
+main: Main
+authors: [Piechuu, adrianekk]
 
 commands:
   gamemode:
@@ -18,3 +18,5 @@ commands:
     description: Wiadomosc na title do wszystkich graczy na serwerze.
   coins:
   sklep:
+  is:
+    aliases: [itemshop]
