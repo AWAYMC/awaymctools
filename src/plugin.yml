@@ -1,8 +1,4 @@
-name: ArganiaCore
-version: 1.0
-main: Main
-author: Piechuu
-
-commands:
-  is:
-    aliases: [itemshop]
+name: 'ArganiaCore'
+main: 'net.argania.core.GuildPlugin'
+version: 'v0.4.4-b333'
+authors: [Piechuuu,Adrianekkk]
