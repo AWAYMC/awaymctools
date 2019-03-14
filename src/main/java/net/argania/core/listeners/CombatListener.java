@@ -1,14 +1,15 @@
 package net.argania.core.listeners;
 
-import net.argania.core.Utils.Util;
-import net.argania.core.data.Config;
-import net.argania.core.data.Messages;
-import net.argania.core.managers.CombatManager;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
+
+import net.argania.core.data.Config;
+import net.argania.core.data.Messages;
+import net.argania.core.managers.CombatManager;
+import net.argania.core.utils.Util;
 
 public class CombatListener implements Listener {
 

@@ -1,15 +1,16 @@
 package net.argania.core.data;
 
-import net.argania.core.GuildPlugin;
-import net.argania.core.Utils.Logger;
-import org.bukkit.configuration.ConfigurationSection;
-import org.bukkit.configuration.file.FileConfiguration;
-import org.bukkit.configuration.file.YamlConfiguration;
-
 import java.io.File;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import org.bukkit.configuration.ConfigurationSection;
+import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.configuration.file.YamlConfiguration;
+
+import net.argania.core.GuildPlugin;
+import net.argania.core.utils.Logger;
 
 public class TabScheme {
 

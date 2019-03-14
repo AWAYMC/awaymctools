@@ -1,13 +1,13 @@
 package net.argania.core.tablist;
 
 
-import net.argania.core.objects.guild.Guild;
-import net.argania.core.objects.users.User;
-
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
+
+import net.argania.core.objects.guild.Guild;
+import net.argania.core.objects.user.User;
 
 public class RankList {
 

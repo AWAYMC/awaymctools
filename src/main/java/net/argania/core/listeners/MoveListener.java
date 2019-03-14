@@ -1,19 +1,20 @@
 package net.argania.core.listeners;
 
-import net.argania.core.Utils.Util;
-import net.argania.core.data.Config;
-import net.argania.core.data.Messages;
-import net.argania.core.enums.NotifyType;
-import net.argania.core.enums.Time;
-import net.argania.core.managers.guild.AllianceManager;
-import net.argania.core.managers.guild.GuildManager;
-import net.argania.core.objects.guild.Guild;
+import java.util.HashMap;
+
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerMoveEvent;
 
-import java.util.HashMap;
+import net.argania.core.data.Config;
+import net.argania.core.data.Messages;
+import net.argania.core.enums.NotifyType;
+import net.argania.core.managers.guild.AllianceManager;
+import net.argania.core.managers.guild.GuildManager;
+import net.argania.core.objects.guild.Guild;
+import net.argania.core.utils.Util;
+import net.argania.core.utils.enums.Time;
 
 public class MoveListener implements Listener {
 

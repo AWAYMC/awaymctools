@@ -1,11 +1,12 @@
 package net.argania.core.data;
 
-import net.argania.core.configuration.Configuration;
-import org.bukkit.plugin.java.JavaPlugin;
-
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+
+import org.bukkit.plugin.java.JavaPlugin;
+
+import net.argania.core.configuration.Configuration;
 
 public class Config extends Configuration {
 
@@ -156,6 +157,4 @@ public class Config extends Configuration {
         super(plugin, "config.yml", "config.");
     }
 
-    public void reloadConfiguration() {
-    }
 }

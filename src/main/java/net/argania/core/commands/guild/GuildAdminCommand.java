@@ -1,15 +1,23 @@
 package net.argania.core.commands.guild;
 
-import net.argania.core.Utils.Util;
-import net.argania.core.commands.SubCommand;
-import net.argania.core.commands.guild.admin.*;
-import net.argania.core.data.Commands;
-import net.argania.core.data.Messages;
-import org.bukkit.entity.Player;
-
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
+
+import org.bukkit.entity.Player;
+
+import net.argania.core.commands.SubCommand;
+import net.argania.core.commands.admin.BanCommand;
+import net.argania.core.commands.admin.DeleteCommand;
+import net.argania.core.commands.admin.KickCommand;
+import net.argania.core.commands.admin.ReloadCommand;
+import net.argania.core.commands.admin.SetCommand;
+import net.argania.core.commands.admin.SetCuboidCommand;
+import net.argania.core.commands.admin.TeleportCommand;
+import net.argania.core.commands.admin.UnBanCommand;
+import net.argania.core.data.Commands;
+import net.argania.core.data.Messages;
+import net.argania.core.utils.Util;
 
 public class GuildAdminCommand extends SubCommand {
 
@@ -68,7 +76,4 @@ public class GuildAdminCommand extends SubCommand {
         return null;
     }
 
-    public String getName() {
-        return null;
-    }
 }

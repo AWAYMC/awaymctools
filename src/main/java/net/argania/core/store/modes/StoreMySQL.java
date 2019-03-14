@@ -1,18 +1,19 @@
 package net.argania.core.store.modes;
 
-import net.argania.core.GuildPlugin;
-import net.argania.core.Utils.Logger;
-import net.argania.core.enums.Time;
-import net.argania.core.store.modes.store.Store;
-import net.argania.core.store.modes.store.StoreMode;
-import org.bukkit.scheduler.BukkitRunnable;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
+
+import org.bukkit.scheduler.BukkitRunnable;
+
+import net.argania.core.GuildPlugin;
+import net.argania.core.store.Store;
+import net.argania.core.store.StoreMode;
+import net.argania.core.utils.Logger;
+import net.argania.core.utils.enums.Time;
 
 public class StoreMySQL implements Store {
 

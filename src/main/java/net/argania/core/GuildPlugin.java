@@ -1,36 +1,35 @@
 package net.argania.core;
 
-import net.argania.core.Utils.Logger;
-import net.argania.core.Utils.Ticking;
-import net.argania.core.Utils.UptakeUtil;
-import net.argania.core.commands.CombatCommand;
-import net.argania.core.commands.RevoGuildCommand;
-import net.argania.core.commands.SubCommand;
-import net.argania.core.commands.guild.GuildAdminCommand;
-import net.argania.core.commands.guild.GuildCommand;
-import net.argania.core.commands.guild.users.TopCommand;
-import net.argania.core.commands.ranking.RankingAdminCommand;
-import net.argania.core.commands.ranking.RankingCommand;
-import net.argania.core.data.Commands;
-import net.argania.core.data.Config;
-import net.argania.core.data.Messages;
-import net.argania.core.data.TabScheme;
-import net.argania.core.enums.Time;
-import net.argania.core.listeners.*;
-import net.argania.core.managers.CombatManager;
-import net.argania.core.managers.NameTagManager;
-import net.argania.core.managers.guild.AllianceManager;
-import net.argania.core.managers.guild.GuildManager;
-import net.argania.core.managers.users.UserManager;
-import net.argania.core.store.modes.StoreMySQL;
-import net.argania.core.store.modes.StoreSQLITE;
-import net.argania.core.store.modes.store.Store;
-import net.argania.core.store.modes.store.StoreMode;
-import net.argania.core.tablist.update.TabLowUpdateTask;
-import net.argania.core.tablist.update.TabThread;
-import net.argania.core.tasks.CheckValidityTask;
-import net.argania.core.tasks.CombatTask;
-import net.argania.core.tasks.RespawnCrystalTask;
+import net.karolek.revoguild.commands.CombatCommand;
+import net.karolek.revoguild.commands.RevoGuildCommand;
+import net.karolek.revoguild.commands.SubCommand;
+import net.karolek.revoguild.commands.guild.GuildAdminCommand;
+import net.karolek.revoguild.commands.guild.GuildCommand;
+import net.karolek.revoguild.commands.ranking.RankingAdminCommand;
+import net.karolek.revoguild.commands.ranking.RankingCommand;
+import net.karolek.revoguild.commands.ranking.TopCommand;
+import net.karolek.revoguild.data.Commands;
+import net.karolek.revoguild.data.Config;
+import net.karolek.revoguild.data.Messages;
+import net.karolek.revoguild.data.TabScheme;
+import net.karolek.revoguild.listeners.*;
+import net.karolek.revoguild.managers.*;
+import net.karolek.revoguild.managers.guild.AllianceManager;
+import net.karolek.revoguild.managers.guild.GuildManager;
+import net.karolek.revoguild.managers.user.UserManager;
+import net.karolek.revoguild.store.Store;
+import net.karolek.revoguild.store.StoreMode;
+import net.karolek.revoguild.store.modes.StoreMySQL;
+import net.karolek.revoguild.store.modes.StoreSQLITE;
+import net.karolek.revoguild.tablist.update.TabLowUpdateTask;
+import net.karolek.revoguild.tablist.update.TabThread;
+import net.karolek.revoguild.tasks.CheckValidityTask;
+import net.karolek.revoguild.tasks.CombatTask;
+import net.karolek.revoguild.tasks.RespawnCrystalTask;
+import net.karolek.revoguild.utils.Logger;
+import net.karolek.revoguild.utils.Ticking;
+import net.karolek.revoguild.utils.enums.Time;
+import net.karolek.revoguild.utils.UptakeUtil;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.PluginManager;
@@ -41,8 +40,7 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-import static net.argania.core.store.modes.store.StoreMode.MYSQL;
-
+import static net.karolek.revoguild.store.StoreMode.MYSQL;
 
 public class GuildPlugin extends JavaPlugin {
 
@@ -151,12 +149,12 @@ public class GuildPlugin extends JavaPlugin {
         }
         boolean conn = store.connect();
         if (conn) {
-            store.update(true, "CREATE TABLE IF NOT EXISTS `{P}guild` (" + (store.getStoreMode() == MYSQL ? "`id` int(10) NOT NULL PRIMARY KEY AUTO_INCREMENT, " : "`id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,") + " `tag` varchar(4) NOT NULL, `name` varchar(32) NOT NULL, `owner` varchar(36) NOT NULL, `leader` varchar(36) NOT NULL, `cuboidWorld` varchar(32) NOT NULL, `cuboidX` int(10) NOT NULL, `cuboidZ` int(10) NOT NULL, `cuboidSize` int(10) NOT NULL, `homeWorld` varchar(32) NOT NULL, `homeX` int(10) NOT NULL, `homeY` int(10) NOT NULL, `homeZ` int(10) NOT NULL, `lives` int(2) NOT NULL DEFAULT '3', `createTime` bigint(13) NOT NULL DEFAULT '0', `expireTime` bigint(13) NOT NULL DEFAULT '0', `lastTakenLifeTime` bigint(13) NOT NULL DEFAULT '0', `pvp` int(1) NOT NULL DEFAULT '0', `banAdmin` varchar(16) NOT NULL, `banTime` bigint(13) NOT NULL, `banReason` varchar(255) NOT NULL);");
+            store.update(true, "CREATE TABLE IF NOT EXISTS `{P}guilds` (" + (store.getStoreMode() == MYSQL ? "`id` int(10) NOT NULL PRIMARY KEY AUTO_INCREMENT, " : "`id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,") + " `tag` varchar(4) NOT NULL, `name` varchar(32) NOT NULL, `owner` varchar(36) NOT NULL, `leader` varchar(36) NOT NULL, `cuboidWorld` varchar(32) NOT NULL, `cuboidX` int(10) NOT NULL, `cuboidZ` int(10) NOT NULL, `cuboidSize` int(10) NOT NULL, `homeWorld` varchar(32) NOT NULL, `homeX` int(10) NOT NULL, `homeY` int(10) NOT NULL, `homeZ` int(10) NOT NULL, `lives` int(2) NOT NULL DEFAULT '3', `createTime` bigint(13) NOT NULL DEFAULT '0', `expireTime` bigint(13) NOT NULL DEFAULT '0', `lastTakenLifeTime` bigint(13) NOT NULL DEFAULT '0', `pvp` int(1) NOT NULL DEFAULT '0', `banAdmin` varchar(16) NOT NULL, `banTime` bigint(13) NOT NULL, `banReason` varchar(255) NOT NULL);");
             store.update(true, "CREATE TABLE IF NOT EXISTS `{P}members` (" + (store.getStoreMode() == MYSQL ? "`id` int(10) NOT NULL PRIMARY KEY AUTO_INCREMENT," : "`id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,") + " `uuid` varchar(36) NOT NULL, `tag` varchar(4) NOT NULL);");
             store.update(true, "CREATE TABLE IF NOT EXISTS `{P}treasures` (" + (store.getStoreMode() == MYSQL ? "`id` int(10) NOT NULL PRIMARY KEY AUTO_INCREMENT," : "`id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,") + " `tag` varchar(4) NOT NULL, `content` longtext NOT NULL);");
             store.update(true, "CREATE TABLE IF NOT EXISTS `{P}treasure_users` (" + (store.getStoreMode() == MYSQL ? "`id` int(10) NOT NULL PRIMARY KEY AUTO_INCREMENT," : "`id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,") + " `uuid` varchar(36) NOT NULL, `tag` varchar(4) NOT NULL);");
             store.update(true, "CREATE TABLE IF NOT EXISTS `{P}alliances` (" + (store.getStoreMode() == MYSQL ? "`id` int(10) NOT NULL PRIMARY KEY AUTO_INCREMENT," : "`id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,") + " `guild_1` varchar(4) NOT NULL, `guild_2` varchar(4) NOT NULL);");
-            store.update(true, "CREATE TABLE IF NOT EXISTS `{P}users` (" + (store.getStoreMode() == MYSQL ? "`id` int(10) NOT NULL PRIMARY KEY AUTO_INCREMENT," : "`id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,") + " `uuid` varchar(36) NOT NULL, `name` varchar(16) NOT NULL, `points` int(10) NOT NULL, `kills` int(10) NOT NULL, `deaths` int(10) NOT NULL);");
+            store.update(true, "CREATE TABLE IF NOT EXISTS `{P}admin` (" + (store.getStoreMode() == MYSQL ? "`id` int(10) NOT NULL PRIMARY KEY AUTO_INCREMENT," : "`id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,") + " `uuid` varchar(36) NOT NULL, `name` varchar(16) NOT NULL, `points` int(10) NOT NULL, `kills` int(10) NOT NULL, `deaths` int(10) NOT NULL);");
         }
         return conn;
     }
@@ -233,7 +231,7 @@ public class GuildPlugin extends JavaPlugin {
 
     private void checkUpdate() {
         try {
-            String url = "https://youtube.com/piechu1337";
+            String url = "https://raw.githubusercontent.com/userMacieG/RevoGuild/master/version.txt";
             HttpURLConnection conn = (HttpURLConnection) new URL(url).openConnection();
             BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
             String version = br.readLine();
@@ -241,10 +239,11 @@ public class GuildPlugin extends JavaPlugin {
             int build = Integer.parseInt(version.split("-")[1].replace("b", ""));
             int myBuild = Integer.parseInt(myVersion.split("-")[1].replace("b", ""));
             if (!myVersion.equalsIgnoreCase(version) && build > myBuild) {
-                Logger.info("-------------[ ArganGUILD ]-------------");
-                Logger.info(" > Licencja poprawna baw sie dobrze :)", "");
+                Logger.info("-------------[ RevoGUILD ]-------------");
+                Logger.info(" > Znaleziono nowa wersje pluginu!", "");
                 Logger.info(" > Zainstalowana wersja: " + myVersion);
                 Logger.info(" > Aktualna wersja: " + version, "");
+                Logger.info(" > Pobierz najnowsza wersje z: https://github.com/userMacieG/RevoGuild/releases");
                 Logger.info("---------------------------------------");
             }
             conn.disconnect();

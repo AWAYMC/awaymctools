@@ -1,17 +1,17 @@
 package net.argania.core.managers.guild;
 
-import net.argania.core.GuildPlugin;
-import net.argania.core.Utils.Logger;
-import net.argania.core.managers.NameTagManager;
-import net.argania.core.objects.guild.Alliance;
-import net.argania.core.objects.guild.Guild;
-
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+
+import net.argania.core.GuildPlugin;
+import net.argania.core.managers.NameTagManager;
+import net.argania.core.objects.guild.Alliance;
+import net.argania.core.objects.guild.Guild;
+import net.argania.core.utils.Logger;
 
 public class AllianceManager {
 
@@ -93,5 +93,4 @@ public class AllianceManager {
         return invites;
     }
 
-    }
-
+}

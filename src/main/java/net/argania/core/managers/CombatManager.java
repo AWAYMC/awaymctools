@@ -1,11 +1,12 @@
 package net.argania.core.managers;
 
-import net.argania.core.data.Config;
-import net.argania.core.enums.Time;
-import org.bukkit.entity.Player;
-
 import java.text.DecimalFormat;
 import java.util.HashMap;
+
+import org.bukkit.entity.Player;
+
+import net.argania.core.data.Config;
+import net.argania.core.utils.enums.Time;
 
 public class CombatManager {
 

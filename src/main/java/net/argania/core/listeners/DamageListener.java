@@ -1,16 +1,18 @@
 package net.argania.core.listeners;
 
-import net.argania.core.Utils.ParticleUtil;
-import net.argania.core.Utils.Util;
-import net.argania.core.data.Messages;
-import net.argania.core.managers.guild.AllianceManager;
-import net.argania.core.managers.guild.GuildManager;
-import net.argania.core.objects.guild.Guild;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
+
+import net.argania.core.data.Messages;
+import net.argania.core.managers.guild.AllianceManager;
+import net.argania.core.managers.guild.GuildManager;
+import net.argania.core.objects.guild.Guild;
+import net.argania.core.utils.ParticleUtil;
+import net.argania.core.utils.ParticleUtil.ParticleType;
+import net.argania.core.utils.Util;
 
 public class DamageListener implements Listener {
 
@@ -43,7 +45,7 @@ public class DamageListener implements Listener {
                 e.setDamage(0);
             } else {
                 e.setCancelled(true);
-                ParticleUtil.sendPartileToPlayer(d, ParticleUtil.ParticleType.HEART, p.getEyeLocation(), 0.25F, 0.25F, 0.25F, 8, 3);
+                ParticleUtil.sendPartileToPlayer(d, ParticleType.HEART, p.getEyeLocation(), 0.25F, 0.25F, 0.25F, 8, 3);
                 Util.sendMessage(d, Messages.ERROR_CANT_ATTACK$PLAYER);
             }
         } else if (AllianceManager.hasAlliance(pg, dg)) {

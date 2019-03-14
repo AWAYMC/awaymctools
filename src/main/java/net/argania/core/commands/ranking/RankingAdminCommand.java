@@ -1,16 +1,18 @@
 package net.argania.core.commands.ranking;
 
-import net.argania.core.Utils.Util;
-import net.argania.core.commands.ResetCommand;
-import net.argania.core.commands.SubCommand;
-import net.argania.core.commands.guild.admin.SetCommand;
-import net.argania.core.data.Commands;
-import net.argania.core.data.Messages;
-import org.bukkit.entity.Player;
 
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
+
+import org.bukkit.entity.Player;
+
+import net.argania.core.commands.SubCommand;
+import net.argania.core.commands.admin.SetCommand;
+import net.argania.core.commands.ranking.admin.ResetCommand;
+import net.argania.core.data.Commands;
+import net.argania.core.data.Messages;
+import net.argania.core.utils.Util;
 
 public class RankingAdminCommand extends SubCommand {
 

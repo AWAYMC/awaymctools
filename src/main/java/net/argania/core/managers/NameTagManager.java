@@ -1,18 +1,19 @@
 package net.argania.core.managers;
 
-import net.argania.core.Utils.Util;
-import net.argania.core.data.Config;
-import net.argania.core.data.Messages;
-import net.argania.core.managers.guild.AllianceManager;
-import net.argania.core.managers.guild.GuildManager;
-import net.argania.core.objects.guild.Guild;
+import java.util.Objects;
+
 import org.bukkit.Bukkit;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.entity.Player;
 import org.bukkit.scoreboard.Scoreboard;
 import org.bukkit.scoreboard.Team;
 
-import java.util.Objects;
+import net.argania.core.data.Config;
+import net.argania.core.data.Messages;
+import net.argania.core.managers.guild.AllianceManager;
+import net.argania.core.managers.guild.GuildManager;
+import net.argania.core.objects.guild.Guild;
+import net.argania.core.utils.Util;
 
 public class NameTagManager {
 

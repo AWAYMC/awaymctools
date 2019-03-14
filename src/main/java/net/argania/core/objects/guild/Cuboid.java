@@ -1,11 +1,12 @@
 package net.argania.core.objects.guild;
 
-import net.argania.core.data.Config;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
+
+import net.argania.core.data.Config;
 
 public class Cuboid {
 

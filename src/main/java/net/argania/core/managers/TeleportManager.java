@@ -1,8 +1,8 @@
 package net.argania.core.managers;
 
-import net.argania.core.GuildPlugin;
-import net.argania.core.Utils.Util;
-import net.argania.core.data.Messages;
+import java.util.HashMap;
+import java.util.UUID;
+
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import org.bukkit.event.player.PlayerTeleportEvent;
@@ -11,8 +11,9 @@ import org.bukkit.potion.PotionEffectType;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.scheduler.BukkitTask;
 
-import java.util.HashMap;
-import java.util.UUID;
+import net.argania.core.GuildPlugin;
+import net.argania.core.data.Messages;
+import net.argania.core.utils.Util;
 
 public class TeleportManager {
 

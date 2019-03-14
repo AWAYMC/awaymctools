@@ -1,10 +1,12 @@
 package net.argania.core.commands;
 
-import net.argania.core.Utils.Util;
+
+import org.bukkit.entity.Player;
+
 import net.argania.core.data.Commands;
 import net.argania.core.data.Messages;
 import net.argania.core.managers.CombatManager;
-import org.bukkit.entity.Player;
+import net.argania.core.utils.Util;
 
 public class CombatCommand extends SubCommand {
 

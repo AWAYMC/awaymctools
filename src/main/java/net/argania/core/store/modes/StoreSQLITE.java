@@ -1,10 +1,5 @@
 package net.argania.core.store.modes;
 
-import net.argania.core.GuildPlugin;
-import net.argania.core.Utils.Logger;
-import net.argania.core.data.Config;
-import net.argania.core.store.modes.store.Store;
-import net.argania.core.store.modes.store.StoreMode;
 
 import java.io.File;
 import java.sql.Connection;
@@ -13,6 +8,12 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
+
+import net.argania.core.GuildPlugin;
+import net.argania.core.data.Config;
+import net.argania.core.store.Store;
+import net.argania.core.store.StoreMode;
+import net.argania.core.utils.Logger;
 
 public class StoreSQLITE implements Store {
 

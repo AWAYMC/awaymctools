@@ -1,7 +1,8 @@
 package net.argania.core.tablist.update;
 
-import net.argania.core.managers.TabManager;
 import org.bukkit.scheduler.BukkitRunnable;
+
+import net.argania.core.managers.TabManager;
 
 class TabHighUpdateTask extends BukkitRunnable {
 

@@ -1,12 +1,13 @@
 package net.argania.core.commands.ranking;
 
-import net.argania.core.Utils.Util;
+import org.bukkit.entity.Player;
+
 import net.argania.core.commands.SubCommand;
 import net.argania.core.data.Commands;
 import net.argania.core.data.Messages;
-import net.argania.core.managers.users.UserManager;
-import net.argania.core.objects.users.User;
-import org.bukkit.entity.Player;
+import net.argania.core.managers.user.UserManager;
+import net.argania.core.objects.user.User;
+import net.argania.core.utils.Util;
 
 public class RankingCommand extends SubCommand {
 

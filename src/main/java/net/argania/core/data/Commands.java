@@ -1,10 +1,11 @@
 package net.argania.core.data;
 
-import net.argania.core.configuration.Configuration;
-import org.bukkit.plugin.java.JavaPlugin;
-
 import java.util.Arrays;
 import java.util.List;
+
+import org.bukkit.plugin.java.JavaPlugin;
+
+import net.argania.core.configuration.Configuration;
 
 public class Commands extends Configuration {
 
@@ -154,63 +155,63 @@ public class Commands extends Configuration {
     public static String GUILD_ADMIN_MAIN_NAME = "ga";
     public static String GUILD_ADMIN_MAIN_DESCRIPTION = "glowna komenda administratora systemu gildii";
     public static String GUILD_ADMIN_MAIN_USAGE = "/ga <subkomenda>";
-    public static String GUILD_ADMIN_MAIN_PERMISSION = "revoguild.commands.admins.guild";
+    public static String GUILD_ADMIN_MAIN_PERMISSION = "revoguild.commands.admin.guild";
     public static List<String> GUILD_ADMIN_MAIN_ALIASES = Arrays.asList("gildieadmin", "guildadmin", "gildiaadmin");
 
     public static boolean GUILD_ADMIN_BAN_ENABLED = true;
     public static String GUILD_ADMIN_BAN_NAME = "ban";
     public static String GUILD_ADMIN_BAN_DESCRIPTION = "banowanie wybranej gildii";
     public static String GUILD_ADMIN_BAN_USAGE = "/ga ban <tag/nazwa> <czas> <powod>";
-    public static String GUILD_ADMIN_BAN_PERMISSION = "revoguild.commands.admins.guild.ban";
+    public static String GUILD_ADMIN_BAN_PERMISSION = "revoguild.commands.admin.guild.ban";
     public static List<String> GUILD_ADMIN_BAN_ALIASES = Arrays.asList("zbanuj");
 
     public static boolean GUILD_ADMIN_DELETE_ENABLED = true;
     public static String GUILD_ADMIN_DELETE_NAME = "usun";
     public static String GUILD_ADMIN_DELETE_DESCRIPTION = "usuwanie wybranej gildii";
     public static String GUILD_ADMIN_DELETE_USAGE = "/ga usun <tag/nazwa>";
-    public static String GUILD_ADMIN_DELETE_PERMISSION = "revoguild.commands.admins.guild.delete";
+    public static String GUILD_ADMIN_DELETE_PERMISSION = "revoguild.commands.admin.guild.delete";
     public static List<String> GUILD_ADMIN_DELETE_ALIASES = Arrays.asList("delete");
 
     public static boolean GUILD_ADMIN_KICK_ENABLED = true;
     public static String GUILD_ADMIN_KICK_NAME = "wyrzuc";
     public static String GUILD_ADMIN_KICK_DESCRIPTION = "wyrzuca czlonka wybranej gildii";
     public static String GUILD_ADMIN_KICK_USAGE = "/ga wyrzuc <tag/nazwa> <gracz>";
-    public static String GUILD_ADMIN_KICK_PERMISSION = "revoguild.commands.admins.guild.kick";
+    public static String GUILD_ADMIN_KICK_PERMISSION = "revoguild.commands.admin.guild.kick";
     public static List<String> GUILD_ADMIN_KICK_ALIASES = Arrays.asList("kick");
 
     public static boolean GUILD_ADMIN_RELOAD_ENABLED = true;
     public static String GUILD_ADMIN_RELOAD_NAME = "reload";
     public static String GUILD_ADMIN_RELOAD_DESCRIPTION = "przeladowanie plikow konfiguracyjnych";
     public static String GUILD_ADMIN_RELOAD_USAGE = "/ga reload";
-    public static String GUILD_ADMIN_RELOAD_PERMISSION = "revoguild.commands.admins.guild.reload";
+    public static String GUILD_ADMIN_RELOAD_PERMISSION = "revoguild.commands.admin.guild.reload";
     public static List<String> GUILD_ADMIN_RELOAD_ALIASES = Arrays.asList("przeladuj");
 
     public static boolean GUILD_ADMIN_SET_ENABLED = true;
     public static String GUILD_ADMIN_SET_NAME = "set";
     public static String GUILD_ADMIN_SET_DESCRIPTION = "zmiana wartosci wybranej gildii";
     public static String GUILD_ADMIN_SET_USAGE = "/ga set <tag/nazwa> <leader|owner|lives|pvp|size> <wartosc>";
-    public static String GUILD_ADMIN_SET_PERMISSION = "revoguild.commands.admins.guild.set";
+    public static String GUILD_ADMIN_SET_PERMISSION = "revoguild.commands.admin.guild.set";
     public static List<String> GUILD_ADMIN_SET_ALIASES = Arrays.asList("ustawrozmiar");
 
     public static boolean GUILD_ADMIN_SET$CUBOID_ENABLED = true;
     public static String GUILD_ADMIN_SET$CUBOID_NAME = "setcuboid";
     public static String GUILD_ADMIN_SET$CUBOID_DESCRIPTION = "zmiana lokacji cuboida wybranej gildii";
     public static String GUILD_ADMIN_SET$CUBOID_USAGE = "/ga setcuboid <tag/nazwa>";
-    public static String GUILD_ADMIN_SET$CUBOID_PERMISSION = "revoguild.commands.admins.guild.setcuboid";
+    public static String GUILD_ADMIN_SET$CUBOID_PERMISSION = "revoguild.commands.admin.guild.setcuboid";
     public static List<String> GUILD_ADMIN_SET$CUBOID_ALIASES = Arrays.asList("setcub", "ustawteren");
 
     public static boolean GUILD_ADMIN_TELEPORT_ENABLED = true;
     public static String GUILD_ADMIN_TELEPORT_NAME = "teleport";
     public static String GUILD_ADMIN_TELEPORT_DESCRIPTION = "teleport do centrum wybranej gildii";
     public static String GUILD_ADMIN_TELEPORT_USAGE = "/ga teleport <tag/nazwa>";
-    public static String GUILD_ADMIN_TELEPORT_PERMISSION = "revoguild.commands.admins.guild.teleport";
+    public static String GUILD_ADMIN_TELEPORT_PERMISSION = "revoguild.commands.admin.guild.teleport";
     public static List<String> GUILD_ADMIN_TELEPORT_ALIASES = Arrays.asList("tp");
 
     public static boolean GUILD_ADMIN_UNBAN_ENABLED = true;
     public static String GUILD_ADMIN_UNBAN_NAME = "unban";
     public static String GUILD_ADMIN_UNBAN_DESCRIPTION = "odbanowanie wybranej gildii";
     public static String GUILD_ADMIN_UNBAN_USAGE = "/ga unban <tag/nazwa>";
-    public static String GUILD_ADMIN_UNBAN_PERMISSION = "revoguild.commands.admins.guild.unban";
+    public static String GUILD_ADMIN_UNBAN_PERMISSION = "revoguild.commands.admin.guild.unban";
     public static List<String> GUILD_ADMIN_UNBAN_ALIASES = Arrays.asList("odbanuj");
 
     // Ranking: Gracz
@@ -226,21 +227,21 @@ public class Commands extends Configuration {
     public static String RANKING_ADMIN_MAIN_NAME = "ra";
     public static String RANKING_ADMIN_MAIN_DESCRIPTION = "glowna komenda administratora systemu rankingu";
     public static String RANKING_ADMIN_MAIN_USAGE = "/ra <subkomenda>";
-    public static String RANKING_ADMIN_MAIN_PERMISSION = "revoguild.commands.admins.ranking";
+    public static String RANKING_ADMIN_MAIN_PERMISSION = "revoguild.commands.admin.ranking";
     public static List<String> RANKING_ADMIN_MAIN_ALIASES = Arrays.asList("rankingadmin");
 
     public static boolean RANKING_ADMIN_SET_ENABLED = true;
     public static String RANKING_ADMIN_SET_NAME = "set";
     public static String RANKING_ADMIN_SET_DESCRIPTION = "ustawianie wartosci wybranego gracza";
     public static String RANKING_ADMIN_SET_USAGE = "/ra set <gracz> <kills|deaths|points> <wartosc>";
-    public static String RANKING_ADMIN_SET_PERMISSION = "revoguild.commands.admins.ranking.set";
+    public static String RANKING_ADMIN_SET_PERMISSION = "revoguild.commands.admin.ranking.set";
     public static List<String> RANKING_ADMIN_SET_ALIASES = Arrays.asList("ustaw");
 
     public static boolean RANKING_ADMIN_RESET_ENABLED = true;
     public static String RANKING_ADMIN_RESET_NAME = "reset";
     public static String RANKING_ADMIN_RESET_DESCRIPTION = "reset rankingu wybranego gracza";
     public static String RANKING_ADMIN_RESET_USAGE = "/ra reset <gracz>";
-    public static String RANKING_ADMIN_RESET_PERMISSION = "revoguild.commands.admins.ranking.reset";
+    public static String RANKING_ADMIN_RESET_PERMISSION = "revoguild.commands.admin.ranking.reset";
     public static List<String> RANKING_ADMIN_RESET_ALIASES = Arrays.asList("resetuj");
 
     // Inne
@@ -260,8 +261,5 @@ public class Commands extends Configuration {
 
     public Commands(JavaPlugin plugin) {
         super(plugin, "commands.yml", "commands.");
-    }
-
-    public void reloadConfiguration() {
     }
 }

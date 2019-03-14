@@ -1,23 +1,28 @@
 package net.argania.core.managers;
 
-import net.argania.core.Utils.*;
-import net.argania.core.data.Config;
-import net.argania.core.data.Messages;
-import net.argania.core.data.TabScheme;
-import net.argania.core.managers.guild.GuildManager;
-import net.argania.core.managers.users.UserManager;
-import net.argania.core.objects.guild.Guild;
-import net.argania.core.objects.users.User;
-import net.argania.core.tablist.RankList;
-import net.argania.core.tablist.TabData;
-import net.argania.core.tablist.update.TabThread;
-import org.bukkit.Bukkit;
-import org.bukkit.entity.Player;
-
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.WeakHashMap;
+
+import org.bukkit.Bukkit;
+import org.bukkit.entity.Player;
+
+import net.argania.core.data.Config;
+import net.argania.core.data.Messages;
+import net.argania.core.data.TabScheme;
+import net.argania.core.managers.guild.GuildManager;
+import net.argania.core.managers.user.UserManager;
+import net.argania.core.objects.guild.Guild;
+import net.argania.core.objects.user.User;
+import net.argania.core.tablist.RankList.Data;
+import net.argania.core.tablist.TabData;
+import net.argania.core.tablist.update.TabThread;
+import net.argania.core.utils.DateUtil;
+import net.argania.core.utils.PacketUtil;
+import net.argania.core.utils.Ticking;
+import net.argania.core.utils.TimeUtil;
+import net.argania.core.utils.Util;
 
 public class TabManager {
 
@@ -92,24 +97,24 @@ public class TabManager {
 
     private static String parse(String s, Player p) {
         User pU = UserManager.getUser(p);
-        List<RankList.Data<User>> playerList = TabThread.getInstance().getRankList().getTopPlayers();
+        List<Data<User>> playerList = TabThread.getInstance().getRankList().getTopPlayers();
         for (int i = 0; i < Config.TABLIST_TOPS$MAX; i++) {
             String format = Config.TABLIST_FORMAT_PTOP;
             if (i >= playerList.size()) {
                 format = format.replace("{NAME}", Config.TABLIST_FORMAT_EMPTY);
             } else {
-                RankList.Data<User> u = playerList.get(i);
+                Data<User> u = playerList.get(i);
                 format = format.replace("{NAME}", u == null ? Config.TABLIST_FORMAT_EMPTY : u.getKey().getName());
             }
             s = s.replace("{PTOP-" + (i + 1) + "}", format);
         }
-        List<RankList.Data<Guild>> guildList = TabThread.getInstance().getRankList().getTopGuilds();
+        List<Data<Guild>> guildList = TabThread.getInstance().getRankList().getTopGuilds();
         for (int i = 0; i < Config.TABLIST_TOPS$MAX; i++) {
             String format = Config.TABLIST_FORMAT_GTOP;
             if (i >= guildList.size()) {
                 format = Config.TABLIST_FORMAT_EMPTY;
             } else {
-                RankList.Data<Guild> g = guildList.get(i);
+                Data<Guild> g = guildList.get(i);
                 format = Messages.parse(format, g.getKey());
             }
             s = s.replace("{GTOP-" + (i + 1) + "}", format);

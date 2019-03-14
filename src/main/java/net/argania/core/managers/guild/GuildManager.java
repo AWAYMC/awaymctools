@@ -1,24 +1,25 @@
 package net.argania.core.managers.guild;
 
-import net.argania.core.GuildPlugin;
-import net.argania.core.Utils.Logger;
-import net.argania.core.Utils.SpaceUtil;
-import net.argania.core.Utils.UptakeUtil;
-import net.argania.core.data.Config;
-import net.argania.core.managers.NameTagManager;
-import net.argania.core.managers.users.UserManager;
-import net.argania.core.objects.guild.Guild;
-import net.argania.core.objects.users.User;
-import net.argania.core.tablist.RankList;
-import net.argania.core.tablist.update.TabThread;
-import org.bukkit.Location;
-import org.bukkit.Material;
-import org.bukkit.entity.Player;
-
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Map;
+
+import org.bukkit.Location;
+import org.bukkit.Material;
+import org.bukkit.entity.Player;
+
+import net.argania.core.GuildPlugin;
+import net.argania.core.data.Config;
+import net.argania.core.managers.NameTagManager;
+import net.argania.core.managers.user.UserManager;
+import net.argania.core.objects.guild.Guild;
+import net.argania.core.objects.user.User;
+import net.argania.core.tablist.RankList;
+import net.argania.core.tablist.update.TabThread;
+import net.argania.core.utils.Logger;
+import net.argania.core.utils.SpaceUtil;
+import net.argania.core.utils.UptakeUtil;
 
 public class GuildManager {
 
@@ -126,15 +127,15 @@ public class GuildManager {
     }
 
     public static void enable() {
-        ResultSet rs = GuildPlugin.getStore().query("SELECT * FROM `{P}guild`");
+        ResultSet rs = GuildPlugin.getStore().query("SELECT * FROM `{P}guilds`");
         try {
             while (rs.next()) {
                 Guild g = new Guild(rs);
                 guilds.put(g.getTag().toUpperCase(), g);
             }
-            Logger.info("Loaded " + guilds.size() + " guild!");
+            Logger.info("Loaded " + guilds.size() + " guilds!");
         } catch (SQLException e) {
-            Logger.warning("An error occurred while loading guild!", "Error: " + e.getMessage());
+            Logger.warning("An error occurred while loading guilds!", "Error: " + e.getMessage());
             Logger.exception(e);
         }
     }

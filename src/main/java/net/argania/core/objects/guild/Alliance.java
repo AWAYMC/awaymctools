@@ -1,11 +1,12 @@
 package net.argania.core.objects.guild;
 
-import net.argania.core.GuildPlugin;
-import net.argania.core.managers.guild.GuildManager;
-import net.argania.core.store.modes.store.Entry;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+
+import net.argania.core.GuildPlugin;
+import net.argania.core.managers.guild.GuildManager;
+import net.argania.core.store.Entry;
 
 public class Alliance implements Entry {
 

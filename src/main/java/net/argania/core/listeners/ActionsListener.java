@@ -1,11 +1,6 @@
 package net.argania.core.listeners;
 
-import net.argania.core.Utils.Util;
-import net.argania.core.data.Config;
-import net.argania.core.data.Messages;
-import net.argania.core.managers.guild.GuildManager;
-import net.argania.core.managers.users.UserManager;
-import net.argania.core.objects.guild.Guild;
+
 import org.bukkit.Location;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
@@ -17,6 +12,13 @@ import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.event.player.PlayerBucketEmptyEvent;
 import org.bukkit.event.player.PlayerBucketFillEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
+
+import net.argania.core.data.Config;
+import net.argania.core.data.Messages;
+import net.argania.core.managers.guild.GuildManager;
+import net.argania.core.managers.user.UserManager;
+import net.argania.core.objects.guild.Guild;
+import net.argania.core.utils.Util;
 
 public class ActionsListener implements Listener {
     @EventHandler(priority = EventPriority.LOWEST)

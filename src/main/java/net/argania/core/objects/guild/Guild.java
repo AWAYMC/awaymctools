@@ -1,15 +1,11 @@
 package net.argania.core.objects.guild;
 
-import net.argania.core.GuildPlugin;
-import net.argania.core.Utils.Util;
-import net.argania.core.data.Config;
-import net.argania.core.data.Messages;
-import net.argania.core.enums.Time;
-import net.argania.core.managers.guild.AllianceManager;
-import net.argania.core.managers.users.UserManager;
-import net.argania.core.objects.users.User;
-import net.argania.core.store.modes.store.Entry;
-import net.argania.core.tablist.update.TabThread;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.UUID;
+
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.OfflinePlayer;
@@ -17,11 +13,16 @@ import org.bukkit.Sound;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.HashSet;
-import java.util.Set;
-import java.util.UUID;
+import net.argania.core.GuildPlugin;
+import net.argania.core.data.Config;
+import net.argania.core.data.Messages;
+import net.argania.core.managers.guild.AllianceManager;
+import net.argania.core.managers.user.UserManager;
+import net.argania.core.objects.user.User;
+import net.argania.core.store.Entry;
+import net.argania.core.tablist.update.TabThread;
+import net.argania.core.utils.Util;
+import net.argania.core.utils.enums.Time;
 
 public class Guild implements Entry {
 
@@ -212,7 +213,7 @@ public class Guild implements Entry {
         if (!this.cuboid.addSize()) {
             return false;
         }
-        GuildPlugin.getStore().update(false, "UPDATE `{P}guild` SET `cuboidSize` = '" + this.cuboid.getSize() + "' WHERE `tag` = '" + this.tag + "'");
+        GuildPlugin.getStore().update(false, "UPDATE `{P}guilds` SET `cuboidSize` = '" + this.cuboid.getSize() + "' WHERE `tag` = '" + this.tag + "'");
         return true;
     }
 
@@ -238,7 +239,7 @@ public class Guild implements Entry {
         this.banAdmin = admin;
         this.banReason = reason;
         this.banTime = time;
-        GuildPlugin.getStore().update(false, "UPDATE `{P}guild` SET `banAdmin` = '" + admin + "', `banTime`='" + time + "',`banReason`='" + reason + "' WHERE `tag` = '" + this.tag + "'");
+        GuildPlugin.getStore().update(false, "UPDATE `{P}guilds` SET `banAdmin` = '" + admin + "', `banTime`='" + time + "',`banReason`='" + reason + "' WHERE `tag` = '" + this.tag + "'");
         for (Player p : getOnlineMembers()) {
             p.kickPlayer(Messages.parse(Messages.BAN$REASON, this));
         }
@@ -252,26 +253,26 @@ public class Guild implements Entry {
         this.banAdmin = "";
         this.banReason = "";
         this.banTime = -1L;
-        GuildPlugin.getStore().update(false, "UPDATE `{P}guild` SET `banAdmin` = '" + this.banAdmin + "', `banTime`='" + this.banTime + "',`banReason`='" + this.banReason + "' WHERE `tag` = '" + this.tag + "'");
+        GuildPlugin.getStore().update(false, "UPDATE `{P}guilds` SET `banAdmin` = '" + this.banAdmin + "', `banTime`='" + this.banTime + "',`banReason`='" + this.banReason + "' WHERE `tag` = '" + this.tag + "'");
         return true;
     }
 
     @Override
     public void insert() {
-        String u = "INSERT INTO `{P}guild` (`id`, `tag`, `name`, `owner`, `leader`, `cuboidWorld`, `cuboidX`, `cuboidZ`, `cuboidSize`, `homeWorld`, `homeX`, `homeY`, `homeZ`, `lives`, `createTime`, `expireTime`, `lastTakenLifeTime`, `pvp`, `banAdmin`, `banReason`, `banTime`) VALUES (NULL, '" + this.tag + "', '" + this.name + "', '" + this.owner + "', '" + this.leader + "', '" + this.cuboid.getWorld().getName() + "', '" + this.cuboid.getCenterX() + "', '" + this.cuboid.getCenterZ() + "', '" + this.cuboid.getSize() + "', '" + this.home.getWorld().getName() + "', '" + this.home.getBlockX() + "', '" + this.home.getBlockY() + "', '" + this.home.getBlockZ() + "', '" + this.lives + "', '" + this.createTime + "', '" + this.expireTime + "', '" + this.lastTakenLifeTime + "', '" + (this.pvp ? 1 : 0) + "', '" + this.banAdmin + "', '" + this.banReason + "', '" + this.banTime + "')";
+        String u = "INSERT INTO `{P}guilds` (`id`, `tag`, `name`, `owner`, `leader`, `cuboidWorld`, `cuboidX`, `cuboidZ`, `cuboidSize`, `homeWorld`, `homeX`, `homeY`, `homeZ`, `lives`, `createTime`, `expireTime`, `lastTakenLifeTime`, `pvp`, `banAdmin`, `banReason`, `banTime`) VALUES (NULL, '" + this.tag + "', '" + this.name + "', '" + this.owner + "', '" + this.leader + "', '" + this.cuboid.getWorld().getName() + "', '" + this.cuboid.getCenterX() + "', '" + this.cuboid.getCenterZ() + "', '" + this.cuboid.getSize() + "', '" + this.home.getWorld().getName() + "', '" + this.home.getBlockX() + "', '" + this.home.getBlockY() + "', '" + this.home.getBlockZ() + "', '" + this.lives + "', '" + this.createTime + "', '" + this.expireTime + "', '" + this.lastTakenLifeTime + "', '" + (this.pvp ? 1 : 0) + "', '" + this.banAdmin + "', '" + this.banReason + "', '" + this.banTime + "')";
         GuildPlugin.getStore().update(false, u);
     }
 
     @Override
     public void update(boolean now) {
-        String update = "UPDATE `{P}guild` SET `owner`='" + this.owner + "', `leader`='" + this.leader + "', `cuboidWorld`='" + this.cuboid.getWorld().getName() + "', `cuboidX`='" + this.cuboid.getCenterX() + "', `cuboidZ`='" + this.cuboid.getCenterZ() + "', `cuboidSize`='" + this.cuboid.getSize() + "', `homeWorld`='" + this.home.getWorld().getName() + "', `homeX`='" + this.home.getBlockX() + "', `homeY`='" + this.home.getBlockY() + "', `homeZ`='" + this.home.getBlockZ() + "', `createTime`='" + this.createTime + "', `expireTime`='" + this.expireTime + "', `lastTakenLifeTime` = '" + this.lastTakenLifeTime + "', `lives` = '" + this.lives + "', `pvp`='" + (this.pvp ? 1 : 0) + "', `banAdmin` = '" + this.banAdmin + "', `banTime`='" + this.banTime + "', `banReason`='" + this.banReason + "' WHERE `tag`='" + this.tag + "'";
+        String update = "UPDATE `{P}guilds` SET `owner`='" + this.owner + "', `leader`='" + this.leader + "', `cuboidWorld`='" + this.cuboid.getWorld().getName() + "', `cuboidX`='" + this.cuboid.getCenterX() + "', `cuboidZ`='" + this.cuboid.getCenterZ() + "', `cuboidSize`='" + this.cuboid.getSize() + "', `homeWorld`='" + this.home.getWorld().getName() + "', `homeX`='" + this.home.getBlockX() + "', `homeY`='" + this.home.getBlockY() + "', `homeZ`='" + this.home.getBlockZ() + "', `createTime`='" + this.createTime + "', `expireTime`='" + this.expireTime + "', `lastTakenLifeTime` = '" + this.lastTakenLifeTime + "', `lives` = '" + this.lives + "', `pvp`='" + (this.pvp ? 1 : 0) + "', `banAdmin` = '" + this.banAdmin + "', `banTime`='" + this.banTime + "', `banReason`='" + this.banReason + "' WHERE `tag`='" + this.tag + "'";
         GuildPlugin.getStore().update(now, update);
 
     }
 
     @Override
     public void delete() {
-        GuildPlugin.getStore().update(true, "DELETE FROM `{P}guild` WHERE `tag` = '" + this.tag + "'");
+        GuildPlugin.getStore().update(true, "DELETE FROM `{P}guilds` WHERE `tag` = '" + this.tag + "'");
         GuildPlugin.getStore().update(true, "DELETE FROM `{P}members` WHERE `tag` = '" + this.tag + "'");
         GuildPlugin.getStore().update(true, "DELETE FROM `{P}treasure_users` WHERE `tag` = '" + this.tag + "'");
         this.treasure.delete();

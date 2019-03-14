@@ -1,11 +1,12 @@
 package net.argania.core.tablist;
 
-import net.argania.core.Utils.Util;
-import net.argania.core.tablist.packets.PacketManager;
-import net.argania.core.tablist.packets.PlayerInfoAction;
+import java.util.UUID;
+
 import org.bukkit.entity.Player;
 
-import java.util.UUID;
+import net.argania.core.tablist.packets.PacketManager;
+import net.argania.core.tablist.packets.PlayerInfoAction;
+import net.argania.core.utils.Util;
 
 public class TabData {
 

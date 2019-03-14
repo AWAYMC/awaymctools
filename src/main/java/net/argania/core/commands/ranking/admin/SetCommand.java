@@ -1,13 +1,14 @@
 package net.argania.core.commands.ranking.admin;
 
-import net.karolek.revoguild.objects.user.User;
-import net.karolek.revoguild.commands.SubCommand;
-import net.karolek.revoguild.data.Commands;
-import net.karolek.revoguild.data.Messages;
-import net.karolek.revoguild.managers.user.UserManager;
-import net.karolek.revoguild.tablist.update.TabThread;
-import net.karolek.revoguild.utils.Util;
 import org.bukkit.entity.Player;
+
+import net.argania.core.commands.SubCommand;
+import net.argania.core.data.Commands;
+import net.argania.core.data.Messages;
+import net.argania.core.managers.user.UserManager;
+import net.argania.core.objects.user.User;
+import net.argania.core.tablist.update.TabThread;
+import net.argania.core.utils.Util;
 
 public class SetCommand extends SubCommand {
 

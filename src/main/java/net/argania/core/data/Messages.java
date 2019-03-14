@@ -1,23 +1,24 @@
 package net.argania.core.data;
 
-import net.argania.core.Utils.DateUtil;
-import net.argania.core.Utils.Util;
-import net.argania.core.commands.SubCommand;
-import net.argania.core.configuration.Configuration;
-import net.argania.core.managers.guild.GuildManager;
-import net.argania.core.managers.users.UserManager;
-import net.argania.core.objects.guild.Guild;
-import net.argania.core.objects.users.User;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.UUID;
+
 import org.apache.commons.lang.StringUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.UUID;
+import net.argania.core.commands.SubCommand;
+import net.argania.core.configuration.Configuration;
+import net.argania.core.managers.guild.GuildManager;
+import net.argania.core.managers.user.UserManager;
+import net.argania.core.objects.guild.Guild;
+import net.argania.core.objects.user.User;
+import net.argania.core.utils.DateUtil;
+import net.argania.core.utils.Util;
 
 public class Messages extends Configuration {
 
@@ -202,7 +203,7 @@ public class Messages extends Configuration {
         return Util.fixColor(msg);
     }
 
-    public static List<String> parse(List<String> list, SubCommand g) {
+    public static List<String> parse(List<String> list, Guild g) {
         List<String> fin = new ArrayList<>();
         for (String msg : list) {
             msg = parse(msg, g);
@@ -281,6 +282,4 @@ public class Messages extends Configuration {
         return StringUtils.join(members, ChatColor.GRAY + ", " + ChatColor.RESET);
     }
 
-    public static String parse(List<String> infoGuild, Guild g) {
-    }
 }

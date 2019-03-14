@@ -1,14 +1,14 @@
 package net.argania.core.tablist.packets;
 
-import com.mojang.authlib.GameProfile;
-import net.argania.core.Utils.Reflection;
-import net.argania.core.Utils.Util;
-import net.argania.core.tablist.Profile;
-import org.bukkit.entity.Player;
-
 import java.lang.reflect.Constructor;
 import java.util.ArrayList;
 import java.util.List;
+
+import org.bukkit.entity.Player;
+
+import net.argania.core.tablist.Profile;
+import net.argania.core.utils.Reflection;
+import net.argania.core.utils.Util;
 
 public class PacketManager {
 

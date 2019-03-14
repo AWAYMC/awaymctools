@@ -1,20 +1,21 @@
 package net.argania.core.listeners;
 
-import net.argania.core.Utils.Util;
-import net.argania.core.data.Config;
-import net.argania.core.data.Messages;
-import net.argania.core.managers.guild.AllianceManager;
-import net.argania.core.managers.guild.GuildManager;
-import net.argania.core.managers.users.UserManager;
-import net.argania.core.objects.guild.Alliance;
-import net.argania.core.objects.guild.Guild;
-import net.argania.core.objects.users.User;
 import org.apache.commons.lang.StringUtils;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
+
+import net.argania.core.data.Config;
+import net.argania.core.data.Messages;
+import net.argania.core.managers.guild.AllianceManager;
+import net.argania.core.managers.guild.GuildManager;
+import net.argania.core.managers.user.UserManager;
+import net.argania.core.objects.guild.Alliance;
+import net.argania.core.objects.guild.Guild;
+import net.argania.core.objects.user.User;
+import net.argania.core.utils.Util;
 
 public class AsyncChatListener implements Listener {
 

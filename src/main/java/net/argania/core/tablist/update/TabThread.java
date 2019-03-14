@@ -1,12 +1,6 @@
 package net.argania.core.tablist.update;
 
-import net.argania.core.GuildPlugin;
-import net.argania.core.Utils.Logger;
-import net.argania.core.managers.guild.GuildManager;
-import net.argania.core.managers.users.UserManager;
-import net.argania.core.objects.guild.Guild;
-import net.argania.core.objects.users.User;
-import net.argania.core.tablist.RankList;
+
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -14,6 +8,15 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.concurrent.Executor;
 import java.util.concurrent.atomic.AtomicInteger;
+
+import net.argania.core.GuildPlugin;
+import net.argania.core.managers.guild.GuildManager;
+import net.argania.core.managers.user.UserManager;
+import net.argania.core.objects.guild.Guild;
+import net.argania.core.objects.user.User;
+import net.argania.core.tablist.RankList;
+import net.argania.core.tablist.RankList.Data;
+import net.argania.core.utils.Logger;
 
 public class TabThread extends Thread {
 
@@ -84,16 +87,16 @@ public class TabThread extends Thread {
             while (true) {
                 List<User> stats = new ArrayList<>(UserManager.getUsers().values());
                 stats.sort(getUsersComparator());
-                List<RankList.Data<User>> toAddPlayers = new LinkedList<>();
+                List<Data<User>> toAddPlayers = new LinkedList<>();
                 for (User u : stats) {
-                    toAddPlayers.add(new RankList.Data<>(u, u.getPoints()));
+                    toAddPlayers.add(new Data<>(u, u.getPoints()));
                 }
                 rankList.setTopPlayers(toAddPlayers);
                 List<Guild> guilds = new ArrayList<>(GuildManager.getGuilds().values());
                 guilds.sort(getGuildsComparator());
-                List<RankList.Data<Guild>> toAddGuilds = new LinkedList<>();
+                List<Data<Guild>> toAddGuilds = new LinkedList<>();
                 for (Guild g : guilds) {
-                    toAddGuilds.add(new RankList.Data<>(g, g.getPoints()));
+                    toAddGuilds.add(new Data<>(g, g.getPoints()));
                 }
                 rankList.setTopGuilds(toAddGuilds);
                 new TabHighUpdateTask().runTaskLaterAsynchronously(GuildPlugin.getPlugin(), 1L);
