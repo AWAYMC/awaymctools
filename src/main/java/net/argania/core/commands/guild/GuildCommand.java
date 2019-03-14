@@ -1,16 +1,35 @@
 package net.argania.core.commands.guild;
 
-import net.karolek.revoguild.commands.SubCommand;
-import net.karolek.revoguild.commands.guild.user.*;
-import net.karolek.revoguild.data.Commands;
-import net.karolek.revoguild.data.Config;
-import net.karolek.revoguild.data.Messages;
-import net.karolek.revoguild.utils.Util;
-import org.bukkit.entity.Player;
-
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
+
+import org.bukkit.entity.Player;
+
+import net.argania.core.commands.SubCommand;
+import net.argania.core.commands.admin.DeleteCommand;
+import net.argania.core.commands.admin.KickCommand;
+import net.argania.core.commands.ranking.TopCommand;
+import net.argania.core.commands.user.AllianceCommand;
+import net.argania.core.commands.user.CreateCommand;
+import net.argania.core.commands.user.EffectCommand;
+import net.argania.core.commands.user.EnlargeCommand;
+import net.argania.core.commands.user.HomeCommand;
+import net.argania.core.commands.user.InfoCommand;
+import net.argania.core.commands.user.InviteCommand;
+import net.argania.core.commands.user.ItemsCommand;
+import net.argania.core.commands.user.JoinCommand;
+import net.argania.core.commands.user.LeaderCommand;
+import net.argania.core.commands.user.LeaveCommand;
+import net.argania.core.commands.user.OwnerCommand;
+import net.argania.core.commands.user.ProlongCommand;
+import net.argania.core.commands.user.PvpCommand;
+import net.argania.core.commands.user.SetHomeCommand;
+import net.argania.core.commands.user.TreasureCommand;
+import net.argania.core.data.Commands;
+import net.argania.core.data.Config;
+import net.argania.core.data.Messages;
+import net.argania.core.utils.Util;
 
 public class GuildCommand extends SubCommand {
 

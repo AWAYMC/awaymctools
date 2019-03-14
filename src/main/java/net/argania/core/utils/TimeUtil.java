@@ -8,7 +8,8 @@ import java.util.Map;
 public final class TimeUtil {
 
     private static final SimpleDateFormat timeFormat = new SimpleDateFormat("HH:mm:ss");
-    private static final LinkedHashMap<Integer, String> values = new LinkedHashMap(6);
+    @SuppressWarnings({ "unchecked", "rawtypes" })
+	private static final LinkedHashMap<Integer, String> values = new LinkedHashMap(6);
 
     static {
         values.put(31104000, "y");

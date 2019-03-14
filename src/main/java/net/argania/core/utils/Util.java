@@ -23,6 +23,7 @@ import java.util.Map.Entry;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+@SuppressWarnings("unused")
 public class Util {
 
     public static boolean sendMessage(CommandSender sender, Collection<String> messages) {

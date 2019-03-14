@@ -1,6 +1,5 @@
 package net.argania.core.store.modes;
 
-
 import java.io.File;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -20,7 +19,8 @@ public class StoreSQLITE implements Store {
     private final String name, prefix;
     private final Executor executor;
     private Connection conn;
-    private long time;
+    @SuppressWarnings("unused")
+	private long time;
 
     public StoreSQLITE(String name, String prefix) {
         this.name = name;

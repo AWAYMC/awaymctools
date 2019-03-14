@@ -1,10 +1,8 @@
 package net.argania.core.tablist.update;
 
-import net.karolek.revoguild.managers.TabManager;
-import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitRunnable;
 
-import java.util.Map.Entry;
+import net.argania.core.managers.TabManager;
 
 public class TabLowUpdateTask extends BukkitRunnable {
 

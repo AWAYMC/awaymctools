@@ -1,46 +1,61 @@
 package net.argania.core;
 
-import net.karolek.revoguild.commands.CombatCommand;
-import net.karolek.revoguild.commands.RevoGuildCommand;
-import net.karolek.revoguild.commands.SubCommand;
-import net.karolek.revoguild.commands.guild.GuildAdminCommand;
-import net.karolek.revoguild.commands.guild.GuildCommand;
-import net.karolek.revoguild.commands.ranking.RankingAdminCommand;
-import net.karolek.revoguild.commands.ranking.RankingCommand;
-import net.karolek.revoguild.commands.ranking.TopCommand;
-import net.karolek.revoguild.data.Commands;
-import net.karolek.revoguild.data.Config;
-import net.karolek.revoguild.data.Messages;
-import net.karolek.revoguild.data.TabScheme;
-import net.karolek.revoguild.listeners.*;
-import net.karolek.revoguild.managers.*;
-import net.karolek.revoguild.managers.guild.AllianceManager;
-import net.karolek.revoguild.managers.guild.GuildManager;
-import net.karolek.revoguild.managers.user.UserManager;
-import net.karolek.revoguild.store.Store;
-import net.karolek.revoguild.store.StoreMode;
-import net.karolek.revoguild.store.modes.StoreMySQL;
-import net.karolek.revoguild.store.modes.StoreSQLITE;
-import net.karolek.revoguild.tablist.update.TabLowUpdateTask;
-import net.karolek.revoguild.tablist.update.TabThread;
-import net.karolek.revoguild.tasks.CheckValidityTask;
-import net.karolek.revoguild.tasks.CombatTask;
-import net.karolek.revoguild.tasks.RespawnCrystalTask;
-import net.karolek.revoguild.utils.Logger;
-import net.karolek.revoguild.utils.Ticking;
-import net.karolek.revoguild.utils.enums.Time;
-import net.karolek.revoguild.utils.UptakeUtil;
-import org.bukkit.Bukkit;
-import org.bukkit.entity.Player;
-import org.bukkit.plugin.PluginManager;
-import org.bukkit.plugin.java.JavaPlugin;
+import static net.argania.core.store.StoreMode.MYSQL;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-import static net.karolek.revoguild.store.StoreMode.MYSQL;
+import org.bukkit.Bukkit;
+import org.bukkit.entity.Player;
+import org.bukkit.plugin.PluginManager;
+import org.bukkit.plugin.java.JavaPlugin;
+
+import net.argania.core.commands.CombatCommand;
+import net.argania.core.commands.RevoGuildCommand;
+import net.argania.core.commands.SubCommand;
+import net.argania.core.commands.guild.GuildAdminCommand;
+import net.argania.core.commands.guild.GuildCommand;
+import net.argania.core.commands.ranking.RankingAdminCommand;
+import net.argania.core.commands.ranking.RankingCommand;
+import net.argania.core.commands.ranking.TopCommand;
+import net.argania.core.data.Commands;
+import net.argania.core.data.Config;
+import net.argania.core.data.Messages;
+import net.argania.core.data.TabScheme;
+import net.argania.core.listeners.ActionsListener;
+import net.argania.core.listeners.AsyncChatListener;
+import net.argania.core.listeners.CombatListener;
+import net.argania.core.listeners.DamageListener;
+import net.argania.core.listeners.DeathListener;
+import net.argania.core.listeners.ExplodeListener;
+import net.argania.core.listeners.FightCommandsListener;
+import net.argania.core.listeners.GuildCommandsListener;
+import net.argania.core.listeners.InventoryListener;
+import net.argania.core.listeners.JoinQuitListener;
+import net.argania.core.listeners.LoginListener;
+import net.argania.core.listeners.MoveListener;
+import net.argania.core.listeners.PacketReceiveListener;
+import net.argania.core.listeners.TeleportListener;
+import net.argania.core.managers.CombatManager;
+import net.argania.core.managers.NameTagManager;
+import net.argania.core.managers.guild.AllianceManager;
+import net.argania.core.managers.guild.GuildManager;
+import net.argania.core.managers.user.UserManager;
+import net.argania.core.store.Store;
+import net.argania.core.store.StoreMode;
+import net.argania.core.store.modes.StoreMySQL;
+import net.argania.core.store.modes.StoreSQLITE;
+import net.argania.core.tablist.update.TabLowUpdateTask;
+import net.argania.core.tablist.update.TabThread;
+import net.argania.core.tasks.CheckValidityTask;
+import net.argania.core.tasks.CombatTask;
+import net.argania.core.tasks.RespawnCrystalTask;
+import net.argania.core.utils.Logger;
+import net.argania.core.utils.Ticking;
+import net.argania.core.utils.UptakeUtil;
+import net.argania.core.utils.enums.Time;
 
 public class GuildPlugin extends JavaPlugin {
 
@@ -231,7 +246,7 @@ public class GuildPlugin extends JavaPlugin {
 
     private void checkUpdate() {
         try {
-            String url = "https://raw.githubusercontent.com/userMacieG/RevoGuild/master/version.txt";
+            String url = "https://argania.pl";
             HttpURLConnection conn = (HttpURLConnection) new URL(url).openConnection();
             BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
             String version = br.readLine();
@@ -239,16 +254,16 @@ public class GuildPlugin extends JavaPlugin {
             int build = Integer.parseInt(version.split("-")[1].replace("b", ""));
             int myBuild = Integer.parseInt(myVersion.split("-")[1].replace("b", ""));
             if (!myVersion.equalsIgnoreCase(version) && build > myBuild) {
-                Logger.info("-------------[ RevoGUILD ]-------------");
-                Logger.info(" > Znaleziono nowa wersje pluginu!", "");
+                Logger.info("-------------[ ArganiaCore ]-------------");
+                Logger.info(" > Wersja poprawna baw sie dobrze", "");
                 Logger.info(" > Zainstalowana wersja: " + myVersion);
                 Logger.info(" > Aktualna wersja: " + version, "");
-                Logger.info(" > Pobierz najnowsza wersje z: https://github.com/userMacieG/RevoGuild/releases");
+                Logger.info(" > Stworzony core przez: Adrianekk, Piechuu");
                 Logger.info("---------------------------------------");
             }
             conn.disconnect();
         } catch (Exception e) {
-            Logger.warning("Blad podczas sprawdzania aktualizacji!");
+            Logger.warning("Blad podczas sprawdzania licencji");
         }
     }
 

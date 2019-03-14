@@ -6,6 +6,8 @@ import java.util.List;
 
 import org.bukkit.entity.Player;
 
+import com.mojang.authlib.GameProfile;
+
 import net.argania.core.tablist.Profile;
 import net.argania.core.utils.Reflection;
 import net.argania.core.utils.Util;
@@ -30,10 +32,14 @@ public class PacketManager {
     private static Reflection.ConstructorInvoker PPOPLHF_CONSTRUCTOR = Reflection.getConstructor(PPOPLHF_CLASS);
     private static Constructor<?> PID_CONSTRUCTOR;
 
-    private static Reflection.FieldAccessor PPOPI_A_FIELD = Reflection.getSimpleField(PPOPI_CLASS, "a");
-    private static Reflection.FieldAccessor PPOPI_B_FIELD = Reflection.getSimpleField(PPOPI_CLASS, "b");
-    private static Reflection.FieldAccessor PPOPLHF_A_FIELD = Reflection.getSimpleField(PPOPLHF_CLASS, "a");
-    private static Reflection.FieldAccessor PPOPLHF_B_FIELD = Reflection.getSimpleField(PPOPLHF_CLASS, "b");
+    @SuppressWarnings("rawtypes")
+	private static Reflection.FieldAccessor PPOPI_A_FIELD = Reflection.getSimpleField(PPOPI_CLASS, "a");
+    @SuppressWarnings("rawtypes")
+	private static Reflection.FieldAccessor PPOPI_B_FIELD = Reflection.getSimpleField(PPOPI_CLASS, "b");
+    @SuppressWarnings("rawtypes")
+	private static Reflection.FieldAccessor PPOPLHF_A_FIELD = Reflection.getSimpleField(PPOPLHF_CLASS, "a");
+    @SuppressWarnings("rawtypes")
+	private static Reflection.FieldAccessor PPOPLHF_B_FIELD = Reflection.getSimpleField(PPOPLHF_CLASS, "b");
 
     static {
         try {
@@ -60,7 +66,8 @@ public class PacketManager {
         sendPackets(player, packet);
     }
 
-    public void sendPlayerListPacket(Player player, Profile profile, String displayName, PlayerInfoAction action) {
+    @SuppressWarnings({ "unchecked", "rawtypes" })
+	public void sendPlayerListPacket(Player player, Profile profile, String displayName, PlayerInfoAction action) {
         Object packet = PPOPI_CONSTRUCTOR.invoke();
         PPOPI_A_FIELD.set(packet, Enum.valueOf((Class<Enum>) EPIA_CLASS, action.name()));
         List list = new ArrayList<>();
@@ -69,7 +76,8 @@ public class PacketManager {
         sendPackets(player, packet);
     }
 
-    private Object getPlayerInfoData(Object packet, Profile profile, String displayName) {
+    @SuppressWarnings({ "rawtypes", "unchecked" })
+	private Object getPlayerInfoData(Object packet, Profile profile, String displayName) {
         try {
             return PID_CONSTRUCTOR.newInstance(packet, profile, 9999, Enum.valueOf((Class<Enum>) EG_CLASS, "SURVIVAL"), buildJSON(displayName));
         } catch (Exception e) {

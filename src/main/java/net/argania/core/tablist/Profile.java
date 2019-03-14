@@ -1,9 +1,9 @@
 package net.argania.core.tablist;
 
-
 import java.util.UUID;
 
-import com.avaje.ebeaninternal.util.SortByClause.Property;
+import com.mojang.authlib.GameProfile;
+import com.mojang.authlib.properties.Property;
 
 public class Profile extends GameProfile {
 

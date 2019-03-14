@@ -12,7 +12,8 @@ import java.util.Map;
 
 public class ItemUtil {
 
-    public static List<ItemStack> getItems(String string, int modifier) {
+    @SuppressWarnings("deprecation")
+	public static List<ItemStack> getItems(String string, int modifier) {
         List<ItemStack> items = new ArrayList<>();
         for (String s : string.split(";")) {
             String[] split = s.split("-");
@@ -41,7 +42,8 @@ public class ItemUtil {
         return true;
     }
 
-    public static String getItems(List<ItemStack> items) {
+    @SuppressWarnings("deprecation")
+	public static String getItems(List<ItemStack> items) {
         StringBuilder sb = new StringBuilder();
         for (ItemStack item : items) {
             sb.append(item.getType().name().toLowerCase().replace("_", " "));

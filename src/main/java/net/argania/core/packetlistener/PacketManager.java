@@ -1,12 +1,16 @@
 package net.argania.core.packetlistener;
 
-import java.nio.channels.Channel;
 import java.util.HashMap;
 import java.util.UUID;
 
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 
+import io.netty.channel.Channel;
+import io.netty.channel.ChannelDuplexHandler;
+import io.netty.channel.ChannelHandler;
+import io.netty.channel.ChannelHandlerContext;
+import io.netty.channel.ChannelPromise;
 import net.argania.core.packetlistener.events.PacketReceiveEvent;
 import net.argania.core.packetlistener.events.PacketSendEvent;
 import net.argania.core.utils.Reflection;

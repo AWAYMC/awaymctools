@@ -27,7 +27,8 @@ public class NameTagManager {
         return format;
     }
 
-    public static void initPlayer(Player p) {
+    @SuppressWarnings("deprecation")
+	public static void initPlayer(Player p) {
         Scoreboard sb = Bukkit.getScoreboardManager().getNewScoreboard();
         Guild g = GuildManager.getGuild(p);
         Team t;
@@ -65,7 +66,8 @@ public class NameTagManager {
         }
     }
 
-    public static void createGuild(Guild g, Player p) {
+    @SuppressWarnings("deprecation")
+	public static void createGuild(Guild g, Player p) {
         for (Player o : Bukkit.getOnlinePlayers()) {
             Scoreboard sb = o.getScoreboard();
             Team t = sb.registerNewTeam(g.getTag());
@@ -78,7 +80,8 @@ public class NameTagManager {
         }
     }
 
-    public static void removeGuild(Guild g) {
+    @SuppressWarnings("deprecation")
+	public static void removeGuild(Guild g) {
         for (Player p : Bukkit.getOnlinePlayers()) {
             Scoreboard sb = p.getScoreboard();
             sb.getTeam(g.getTag()).unregister();
@@ -100,7 +103,8 @@ public class NameTagManager {
         }
     }
 
-    public static void joinToGuild(Guild g, Player p) {
+    @SuppressWarnings("deprecation")
+	public static void joinToGuild(Guild g, Player p) {
         for (Player o : Bukkit.getOnlinePlayers()) {
             o.getScoreboard().getTeam(g.getTag()).addPlayer(p);
         }
@@ -111,7 +115,8 @@ public class NameTagManager {
         }
     }
 
-    public static void leaveFromGuild(Guild g, OfflinePlayer p) {
+    @SuppressWarnings("deprecation")
+	public static void leaveFromGuild(Guild g, OfflinePlayer p) {
         for (Player o : Bukkit.getOnlinePlayers()) {
             o.getScoreboard().getTeam("noguild").addPlayer(p);
         }

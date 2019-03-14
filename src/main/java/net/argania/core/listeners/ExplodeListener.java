@@ -19,7 +19,8 @@ import net.argania.core.utils.enums.Time;
 
 public class ExplodeListener implements Listener {
 
-    private static final Calendar calendar = new GregorianCalendar();
+    @SuppressWarnings("unused")
+	private static final Calendar calendar = new GregorianCalendar();
 
     @EventHandler
     public void onExplode(EntityExplodeEvent e) {

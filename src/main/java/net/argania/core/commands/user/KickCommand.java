@@ -20,7 +20,8 @@ public class KickCommand extends SubCommand {
         super(Commands.GUILD_USER_KICK_NAME, Commands.GUILD_USER_KICK_DESCRIPTION, Commands.GUILD_USER_KICK_USAGE, Commands.GUILD_USER_KICK_PERMISSION, Commands.GUILD_USER_KICK_ALIASES);
     }
 
-    @Override
+    @SuppressWarnings("deprecation")
+	@Override
     public boolean onCommand(Player p, String[] args) {
         if (args.length != 1) {
             return Util.sendMessage(p, Messages.parse(Messages.COMMANDS_NO$ENOUGH$ARGS, this));

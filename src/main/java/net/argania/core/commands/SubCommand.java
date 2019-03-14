@@ -12,9 +12,8 @@ import org.bukkit.command.SimpleCommandMap;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.SimplePluginManager;
 
-import com.google.common.reflect.Reflection;
-
 import net.argania.core.data.Messages;
+import net.argania.core.utils.Reflection;
 import net.argania.core.utils.Util;
 
 public abstract class SubCommand extends Command {
