@@ -1,5 +1,4 @@
 package net.argania.core.commands;
-
 import net.argania.core.managers.ChatManager;
 import net.argania.core.utils.ChatUtil;
 import org.bukkit.Bukkit;
