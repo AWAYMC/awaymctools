@@ -1,0 +1,61 @@
+package net.argania.core.managers;
+
+import net.argania.core.data.Config;
+import net.argania.core.utils.enums.Time;
+import org.bukkit.entity.Player;
+
+import java.text.DecimalFormat;
+import java.util.HashMap;
+
+public class CombatManager {
+
+    private static final HashMap<String, Long> combats = new HashMap<>();
+
+    public static void createPlayer(Player p) {
+        combats.put(p.getName(), 0L);
+    }
+
+    public static void removePlayer(Player p) {
+        combats.remove(p.getName());
+    }
+
+    public static long getLastFight(Player p) {
+        return combats.get(p.getName());
+    }
+
+    public static void setLastFight(Player p) {
+        combats.put(p.getName(), System.currentTimeMillis());
+    }
+
+    public static boolean isInFight(Player p) {
+        return (System.currentTimeMillis() - combats.get(p.getName()) >= Time.SECOND.getTime(Config.ESCAPE_TIME));
+    }
+
+    public static boolean wasInFight(Player p) {
+        Long time = combats.get(p.getName());
+        if (time == null) {
+            return false;
+        }
+        return (System.currentTimeMillis() - time - 1000L < Time.SECOND.getTime(Config.ESCAPE_TIME));
+    }
+
+    private static long getTimeToEnd(Player p) {
+        long actual = System.currentTimeMillis();
+        Long time = combats.get(p.getName());
+        if (time == null || time == 0) return 0;
+        long d = actual - time;
+        long t = Time.SECOND.getTime(Config.ESCAPE_TIME) - d;
+        return t;
+    }
+
+    public static String getTime(Player p) {
+        double seconds = getTimeToEnd(p) / 1000.0;
+        DecimalFormat df = new DecimalFormat("#.###");
+        return df.format(seconds);
+    }
+
+    public static HashMap<String, Long> getCombats() {
+        return combats;
+    }
+
+}

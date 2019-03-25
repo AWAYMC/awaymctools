@@ -1,7 +1,0 @@
-name: Main
-version: ${project.version}
-main: net.argania.core.Main
-api-version: 1.8.8
-authors: [Adrianekk, Piechuuu]
-description: BY Adrianekkk and Piechuuu
-website: www.argania.pl
