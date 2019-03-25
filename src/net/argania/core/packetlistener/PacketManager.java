@@ -1,0 +1,67 @@
+package net.argania.core.packetlistener;
+
+import io.netty.channel.*;
+import net.argania.core.packetlistener.events.PacketReceiveEvent;
+import net.argania.core.packetlistener.events.PacketSendEvent;
+import net.argania.core.utils.Reflection;
+import net.argania.core.utils.Reflection.FieldAccessor;
+import net.argania.core.utils.Reflection.MethodInvoker;
+import org.bukkit.Bukkit;
+import org.bukkit.entity.Player;
+
+import java.util.HashMap;
+import java.util.UUID;
+
+public class PacketManager {
+
+    private static final HashMap<UUID, Channel> channels = new HashMap<>();
+    private static FieldAccessor<Channel> clientChannel = null;
+    private static FieldAccessor<Object> playerConnection = null;
+    private static FieldAccessor<Object> networkManager = null;
+    private static MethodInvoker handleMethod = null;
+
+    static {
+        try {
+            clientChannel = Reflection.getField(Reflection.getMinecraftClass("NetworkManager"), Channel.class, 0);
+            playerConnection = Reflection.getSimpleField(Reflection.getMinecraftClass("EntityPlayer"), "playerConnection");
+            networkManager = Reflection.getSimpleField(Reflection.getMinecraftClass("PlayerConnection"), "networkManager");
+            handleMethod = Reflection.getMethod(Reflection.getCraftBukkitClass("entity.CraftEntity"), "getHandle");
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    private static Channel getChannel(Player p) {
+        Object eP = handleMethod.invoke(p);
+        return clientChannel.get(networkManager.get(playerConnection.get(eP)));
+    }
+
+    public static void registerPlayer(final Player p) {
+        Channel c = getChannel(p);
+        ChannelHandler handler = new ChannelDuplexHandler() {
+            public void write(ChannelHandlerContext ctx, Object msg, ChannelPromise promise) throws Exception {
+                PacketSendEvent event = new PacketSendEvent(msg, p);
+                Bukkit.getPluginManager().callEvent(event);
+                if (event.isCancelled() || event.getPacket() == null)
+                    return;
+                super.write(ctx, event.getPacket(), promise);
+            }
+
+            public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
+                PacketReceiveEvent event = new PacketReceiveEvent(msg, p);
+                Bukkit.getPluginManager().callEvent(event);
+                if (event.isCancelled() || event.getPacket() == null)
+                    return;
+                super.channelRead(ctx, event.getPacket());
+            }
+        };
+        c.pipeline().addBefore("packet_handler", "RevoGuild", handler);
+        channels.put(p.getUniqueId(), c);
+    }
+
+    public static void unregisterPlayer(Player p) {
+        channels.remove(p.getUniqueId()).pipeline().remove("RevoGuild");
+    }
+
+}
